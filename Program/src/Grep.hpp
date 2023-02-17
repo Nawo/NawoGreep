@@ -3,6 +3,7 @@
 #include <filesystem>
 #include <fstream>
 #include <iostream>
+#include <queue>
 #include <string>
 
 class Grep {
@@ -13,10 +14,12 @@ private:
     std::string result_file = "program.txt";
     size_t num_threads = 4;
 
-    void searchFiles();
-    void printVariables();
+    std::queue<std::ifstream> files;
 
     void parseArguments(const int& argc, char* argv[]);
+    void searchFiles();
+    void parseFiles();
+    void printVariables();
 
 public:
     Grep();

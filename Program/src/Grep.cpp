@@ -7,35 +7,6 @@ Grep::Grep(const int& argc, char* argv[]) {
     parseArguments(argc, argv);
 }
 
-void Grep::searchFiles() {
-    std::filesystem::path folderPath(start_dir);
-    if (!std::filesystem::exists(folderPath)) {
-        std::cerr << "The folder does not exist!" << std::endl;
-        return;
-    }
-
-    for (const auto& entry : std::filesystem::recursive_directory_iterator(folderPath)) {
-        if (entry.is_regular_file() && entry.path().extension() == ".txt") {
-            std::ifstream file(entry.path().string());
-            std::string line;
-            int lineNumber = 1;
-            while (std::getline(file, line)) {
-                if (line.find(pattern) != std::string::npos) {
-                    std::cout << "Keyword found in file: " << entry.path().string() << " at line: " << lineNumber << std::endl;
-                }
-                lineNumber++;
-            }
-        }
-    }
-}
-
-void Grep::printVariables() {
-    std::cout << "Start directory: " << start_dir << std::endl;
-    std::cout << "Log file: " << log_file << std::endl;
-    std::cout << "Result file: " << result_file << std::endl;
-    std::cout << "Number of threads: " << num_threads << std::endl;
-}
-
 void Grep::parseArguments(const int& argc, char* argv[]) {
     if (argc < 2) {
         //print_usage();
@@ -58,6 +29,44 @@ void Grep::parseArguments(const int& argc, char* argv[]) {
     }
 }
 
+void Grep::searchFiles() {
+    std::filesystem::path folderPath(start_dir);
+    if (!std::filesystem::exists(folderPath)) {
+        std::cerr << "The folder does not exist!" << std::endl;
+        return;
+    }
+
+    for (const auto& entry : std::filesystem::recursive_directory_iterator(folderPath)) {
+        if (entry.is_regular_file() && entry.path().extension() == ".txt") {
+            files.emplace(entry.path().string());
+            std::ifstream file(entry.path().string());
+        }
+    }
+}
+
+void Grep::parseFiles() {
+    std::string line;
+    int lineNumber = 1;
+
+    while (std::getline(files.front(), line)) {
+        if (line.find(pattern) != std::string::npos) {
+            std::cout << "Keyword found in file: "
+                      << "--here will be file loc.--"
+                      << " at line: " << lineNumber << std::endl;
+        }
+        lineNumber++;
+    }
+}
+
+void Grep::printVariables() {
+    std::cout << "Start directory: " << start_dir << std::endl;
+    std::cout << "Log file: " << log_file << std::endl;
+    std::cout << "Result file: " << result_file << std::endl;
+    std::cout << "Number of threads: " << num_threads << std::endl;
+}
+
 void Grep::run() {
+    searchFiles();
+    parseFiles();
     printVariables();
 }
