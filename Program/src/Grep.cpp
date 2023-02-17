@@ -37,32 +37,57 @@ void Grep::searchFiles() {
     }
 
     for (const auto& entry : std::filesystem::recursive_directory_iterator(folderPath)) {
+        searchedFiles++;
         if (entry.is_regular_file() && entry.path().extension() == ".txt") {
-            files.emplace(entry.path().string());
-            std::ifstream file(entry.path().string());
+            filesToParse.emplace(entry.path());
         }
     }
 }
 
 void Grep::parseFiles() {
-    std::string line;
-    int lineNumber = 1;
+    pattern.insert(0, 1, ' ');
+    pattern.push_back(' ');
 
-    while (std::getline(files.front(), line)) {
-        if (line.find(pattern) != std::string::npos) {
-            std::cout << "Keyword found in file: "
-                      << "--here will be file loc.--"
-                      << " at line: " << lineNumber << std::endl;
+    std::string lineInFile;
+    int lineNumber = 1;
+    bool find = false;
+
+    while (!filesToParse.empty()) {
+        std::ifstream file(filesToParse.front().path().string());
+        while (std::getline(file, lineInFile)) {
+            if (std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end()) != lineInFile.end()) {
+                saveToResultFile(filesToParse.front(), lineNumber, lineInFile);
+                patternsNumber++;
+                if (find == false) {
+                    filesWithPattern++;
+                    find = true;
+                }
+            }
+            lineNumber++;
         }
-        lineNumber++;
+        find = false;
+        lineNumber = 0;
+        lineInFile.clear();
+        filesToParse.pop();
     }
 }
 
+void Grep::saveToResultFile(const std::filesystem::directory_entry& file, const int& lineNumber, const std::string& lineString) {
+    std::cout << file << ":" << lineNumber << ": " << lineString << std::endl;
+}
+
+void Grep::saveToLogFile(const long& threadID, const std::string& fileName) {
+}
+
 void Grep::printVariables() {
-    std::cout << "Start directory: " << start_dir << std::endl;
-    std::cout << "Log file: " << log_file << std::endl;
+    std::cout << "Searched files: " << searchedFiles << std::endl;
+    std::cout << "Files with pattern: " << filesWithPattern << std::endl;
+    std::cout << "Patterns number: " << patternsNumber << std::endl;
     std::cout << "Result file: " << result_file << std::endl;
+    std::cout << "Log file: " << log_file << std::endl;
     std::cout << "Number of threads: " << num_threads << std::endl;
+    std::cout << "Elapsed time: "
+              << "TO DO" << std::endl;
 }
 
 void Grep::run() {
