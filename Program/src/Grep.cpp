@@ -70,6 +70,12 @@ void Grep::parseFiles() {
 }
 
 void Grep::saveToResultFile() {
+    // …/location2/file2:5: the house was big
+    // …/location2/file2:8: something was done in his house
+    // …/location2/file2:20: another house was far from
+    // …/file6:30: in his house
+    // …/file4:15: nearby his house
+
     std::sort(findedFiles.begin(), findedFiles.end(), [](const auto& lhs, const auto& rhs) { return lhs.inFilePatternsNumber_ < rhs.inFilePatternsNumber_; });
     for (const auto& a : findedFiles) {
         std::cout << a.filePatch_ << ":" << a.inFilePatternsNumber_ << ":" << a.lineNumber_ << ":" << a.threadID_ << ":" << a.lineString_ << std::endl;
@@ -77,6 +83,10 @@ void Grep::saveToResultFile() {
 }
 
 void Grep::saveToLogFile() {
+    // 140035841935104: file6, file 4
+    // 140035825149696: file2
+    // 140035833542400:
+    // 140035855147214:
 }
 
 void Grep::printVariables() {

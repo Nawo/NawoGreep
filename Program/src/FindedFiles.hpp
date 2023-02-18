@@ -10,12 +10,13 @@ struct FindedFiles {
     int inFilePatternsNumber_;
     long threadID_;
 
+    std::filesystem::directory_entry getFilePatch();
+    std::string getLineString();
+    int getLineNumber();
+    int getInFilePatternsNumber();
+    long getThreadID();
+
     FindedFiles() = delete;
-    FindedFiles(const std::filesystem::directory_entry& filePatch, const std::string& lineString, const int& lineNumber, const int& inFilePatternsNumber, const long& threadID)
-        : filePatch_(filePatch),
-          lineString_(lineString),
-          lineNumber_(lineNumber),
-          inFilePatternsNumber_(inFilePatternsNumber),
-          threadID_(threadID){};
+    FindedFiles(const std::filesystem::directory_entry& filePatch, const std::string& lineString, const int& lineNumber, const int& inFilePatternsNumber, const long& threadID);
     ~FindedFiles() = default;
 };
