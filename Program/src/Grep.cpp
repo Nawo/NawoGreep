@@ -8,34 +8,37 @@ void Grep::parseArguments(const int& argc, char* argv[]) {
     if (argc < 2) {
         std::cout << "[NAWOGREP] Too few arguments! " << std::endl
                   << "[NAWOGREP] Usage: <pattern> -d <start directory> -l <name of log file> -r <name of result file> -t <number of threads>" << std::endl;
+        exit(0);
     }
     pattern = argv[1];
+    pattern.insert(0, 1, ' ');
+    pattern.push_back(' ');
     for (int i = 2; i < argc; i++) {
-        std::string arg = argv[i];
-        pattern.insert(0, 1, ' ');
-        pattern.push_back(' ');
-        if (arg == "-d" || arg == "--dir") {
+        if (argv[i] == "-d" || argv[i] == "--dir") {
             startSearchDirection = argv[++i];
-        } else if (arg == "-l" || arg == "--log_file") {
+        } else if (argv[i] == "-l" || argv[i] == "--log_file") {
             logFile = argv[++i];
-        } else if (arg == "-r" || arg == "--result_file") {
+        } else if (argv[i] == "-r" || argv[i] == "--result_file") {
             resultFile = argv[++i];
-        } else if (arg == "-t" || arg == "--threads") {
+        } else if (argv[i] == "-t" || argv[i] == "--threads") {
             numberOfThreads = std::stoi(argv[++i]);
         } else {
-            std::cout << "[NAWOGREP] Invalid argument: " << arg << std::endl
+            std::cout << "[NAWOGREP] Invalid argument: " << argv[i] << std::endl
                       << "[NAWOGREP] Usage: <pattern> -d <start directory> -l <name of log file> -r <name of result file> -t <number of threads>" << std::endl;
+            exit(0);
         }
     }
 }
 
-void Grep::searchFiles() {
+void Grep::getStartTime() {
     startProgramTime = std::chrono::high_resolution_clock::now();
+}
 
+void Grep::searchFiles() {
     std::filesystem::path folderPath(startSearchDirection);
     if (!std::filesystem::exists(folderPath)) {
-        std::cout << "[NAWOGREP] The folder does not exist!" << std::endl;
-        return;
+        std::cout << "[NAWOGREP] The folder " << folderPath << " does not exist!" << std::endl;
+        exit(0);
     }
 
     for (const auto& entry : std::filesystem::recursive_directory_iterator(folderPath)) {
@@ -80,25 +83,16 @@ void Grep::parseFiles() {
 }
 
 void Grep::processFilesInQueue() {
-    // create threads
-    std::vector<std::thread> threads;
     for (int i = 0; i < numberOfThreads; i++) {
         threads.push_back(std::thread([&]() { parseFiles(); }));
     }
 
-    // join threads
     for (auto& thread : threads) {
         thread.join();
     }
 }
 
 void Grep::saveToResultFile() {
-    // …/location2/file2:5: the house was big
-    // …/location2/file2:8: something was done in his house
-    // …/location2/file2:20: another house was far from
-    // …/file6:30: in his house
-    // …/file4:15: nearby his house
-
     std::sort(findedFiles.begin(), findedFiles.end(), [](const auto& lhs, const auto& rhs) { return lhs.inFilePatternsNumber_ < rhs.inFilePatternsNumber_; });
     std::ofstream fileToWriteResuult("../" + resultFile);
     if (fileToWriteResuult.is_open()) {
@@ -110,14 +104,16 @@ void Grep::saveToResultFile() {
 }
 
 void Grep::saveToLogFile() {
-    // 140035841935104: file6, file 4
-    // 140035825149696: file2
-    // 140035833542400:
-    // 140035855147214:
+    for (auto& thread : threads) {
+        // TO DO
+    }
+}
+
+void Grep::getEndTime() {
+    endProgramTime = std::chrono::high_resolution_clock::now();
 }
 
 void Grep::printVariables() {
-    endProgramTime = std::chrono::high_resolution_clock::now();
     std::cout << "Searched files: " << searchedFiles << std::endl
               << "Files with pattern: " << filesWithPattern << std::endl
               << "Patterns number: " << patternsNumber << std::endl
@@ -131,10 +127,12 @@ void Grep::printVariables() {
 }
 
 void Grep::run() {
+    getStartTime();
     searchFiles();
     processFilesInQueue();
     parseFiles();
     saveToResultFile();
     saveToLogFile();
+    getEndTime();
     printVariables();
 }

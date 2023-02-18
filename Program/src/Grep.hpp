@@ -1,6 +1,7 @@
 #pragma once
 
 #include <chrono>
+#include <cstdlib>
 #include <filesystem>
 #include <fstream>
 #include <iostream>
@@ -28,20 +29,23 @@ private:
     int inFilePatternsNumber = 0;
     bool find = false;
 
-    std::mutex queueMutex;
-    void processFilesInQueue();
-
     std::queue<std::filesystem::directory_entry> filesToParse;
     std::vector<FindedFiles> findedFiles;
+
+    std::mutex queueMutex;
+    std::vector<std::thread> threads;
+    void processFilesInQueue();
 
     std::chrono::time_point<std::chrono::system_clock> startProgramTime;
     std::chrono::time_point<std::chrono::system_clock> endProgramTime;
 
     void parseArguments(const int& argc, char* argv[]);
+    void getStartTime();
     void searchFiles();
     void parseFiles();
     void saveToResultFile();
     void saveToLogFile();
+    void getEndTime();
     void printVariables();
 
 public:
