@@ -77,8 +77,12 @@ void Grep::saveToResultFile() {
     // …/file4:15: nearby his house
 
     std::sort(findedFiles.begin(), findedFiles.end(), [](const auto& lhs, const auto& rhs) { return lhs.inFilePatternsNumber_ < rhs.inFilePatternsNumber_; });
-    for (const auto& a : findedFiles) {
-        std::cout << a.filePatch_ << ":" << a.inFilePatternsNumber_ << ":" << a.lineNumber_ << ":" << a.threadID_ << ":" << a.lineString_ << std::endl;
+    std::ofstream fileToWriteResuult("../" + resultFile);
+    if (fileToWriteResuult.is_open()) {
+        for (const auto& a : findedFiles) {
+            fileToWriteResuult << a.filePatch_ << ":" << a.lineNumber_ << ": " << a.lineString_ << std::endl;
+        }
+        fileToWriteResuult.close();
     }
 }
 
