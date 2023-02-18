@@ -47,25 +47,48 @@ void Grep::searchFiles() {
 }
 
 void Grep::parseFiles() {
-    while (!filesToParse.empty()) {
-        std::ifstream file(filesToParse.front().path().string());
-        while (std::getline(file, lineInFile)) {
-            if (std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end()) != lineInFile.end()) {
-                if (find == false) {
-                    filesWithPattern++;
-                    find = true;
-                }
-                patternsNumber++;
-                inFilePatternsNumber++;
-                findedFiles.emplace_back(filesToParse.front(), lineInFile, lineNumber, inFilePatternsNumber, 15);
-            }
-            lineNumber++;
+    while (true) {
+        queueMutex.lock();
+        if (filesToParse.empty()) {
+            queueMutex.unlock();
+            break;
         }
-        find = false;
-        inFilePatternsNumber = 0;
-        lineNumber = 0;
-        lineInFile.clear();
-        filesToParse.pop();
+
+        while (!filesToParse.empty()) {
+            std::thread::id thisThreadId = std::this_thread::get_id();
+            std::ifstream file(filesToParse.front().path().string());
+            while (std::getline(file, lineInFile)) {
+                if (std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end()) != lineInFile.end()) {
+                    if (find == false) {
+                        filesWithPattern++;
+                        find = true;
+                    }
+                    patternsNumber++;
+                    inFilePatternsNumber++;
+                    findedFiles.emplace_back(filesToParse.front(), lineInFile, lineNumber, inFilePatternsNumber, thisThreadId);
+                }
+                lineNumber++;
+            }
+            find = false;
+            inFilePatternsNumber = 0;
+            lineNumber = 0;
+            lineInFile.clear();
+            filesToParse.pop();
+        }
+        queueMutex.unlock();
+    }
+}
+
+void Grep::processFilesInQueue() {
+    // create threads
+    std::vector<std::thread> threads;
+    for (int i = 0; i < numberOfThreads; i++) {
+        threads.push_back(std::thread([&]() { parseFiles(); }));
+    }
+
+    // join threads
+    for (auto& thread : threads) {
+        thread.join();
     }
 }
 
@@ -109,6 +132,7 @@ void Grep::printVariables() {
 
 void Grep::run() {
     searchFiles();
+    processFilesInQueue();
     parseFiles();
     saveToResultFile();
     saveToLogFile();

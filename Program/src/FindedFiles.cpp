@@ -1,6 +1,6 @@
 #include "FindedFiles.hpp"
 
-FindedFiles::FindedFiles(const std::filesystem::directory_entry& filePatch, const std::string& lineString, const int& lineNumber, const int& inFilePatternsNumber, const long& threadID)
+FindedFiles::FindedFiles(const std::filesystem::directory_entry& filePatch, const std::string& lineString, const int& lineNumber, const int& inFilePatternsNumber, const std::thread::id& threadID)
     : filePatch_(filePatch),
       lineString_(lineString),
       lineNumber_(lineNumber),
@@ -19,6 +19,6 @@ int FindedFiles::getLineNumber() {
 int FindedFiles::getInFilePatternsNumber() {
     return inFilePatternsNumber_;
 }
-long FindedFiles::getThreadID() {
+std::thread::id FindedFiles::getThreadID() {
     return threadID_;
 }

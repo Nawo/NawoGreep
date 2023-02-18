@@ -4,8 +4,10 @@
 #include <filesystem>
 #include <fstream>
 #include <iostream>
+#include <mutex>
 #include <queue>
 #include <string>
+#include <thread>
 
 #include "FindedFiles.hpp"
 
@@ -25,6 +27,9 @@ private:
     int lineNumber = 1;
     int inFilePatternsNumber = 0;
     bool find = false;
+
+    std::mutex queueMutex;
+    void processFilesInQueue();
 
     std::queue<std::filesystem::directory_entry> filesToParse;
     std::vector<FindedFiles> findedFiles;
