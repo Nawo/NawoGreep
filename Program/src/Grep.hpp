@@ -7,9 +7,10 @@
 #include <queue>
 #include <string>
 
+#include "FindedFiles.hpp"
+
 class Grep {
 private:
-
     int searchedFiles = 0;
     int filesWithPattern = 0;
     int patternsNumber = 0;
@@ -22,26 +23,27 @@ private:
 
     std::string lineInFile;
     int lineNumber = 1;
+    int inFilePatternsNumber = 0;
     bool find = false;
 
     std::queue<std::filesystem::directory_entry> filesToParse;
-    std::vector<std::pair<long, std::string>> parsedFiles;
+    std::vector<FindedFiles> findedFiles;
 
-    std::chrono::time_point<std::chrono::system_clock> start;
-    std::chrono::time_point<std::chrono::system_clock> end;
+    std::chrono::time_point<std::chrono::system_clock> startProgramTime;
+    std::chrono::time_point<std::chrono::system_clock> endProgramTime;
 
     void parseArguments(const int& argc, char* argv[]);
     void searchFiles();
     void parseFiles();
-    void saveToResultFile(const std::filesystem::directory_entry& file, const int& lineNumber, const std::string& lineString);
-    void saveToLogFile(const long& threadID, const std::string& fileName);
+    void saveToResultFile();
+    void saveToLogFile();
     void printVariables();
 
 public:
-    Grep();
+    Grep() = delete;
     Grep(const int& argc, char* argv[]);
 
-    ~Grep();
+    ~Grep() = default;
 
     void run();
 };

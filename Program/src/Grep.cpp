@@ -1,23 +1,19 @@
 #include "Grep.hpp"
 
-Grep::Grep(){
-    std::cout << "[NAWOGREP] Too few arguments to create the object!" << std::endl;
-}
-
 Grep::Grep(const int& argc, char* argv[]) {
     parseArguments(argc, argv);
 }
 
-Grep::~Grep(){};
-
 void Grep::parseArguments(const int& argc, char* argv[]) {
     if (argc < 2) {
-        std::cout << "[NAWOGREP] Too few arguments! " << std::endl;
-        std::cout << "[NAWOGREP] Usage: <pattern> -d <start directory> -l <name of log file> -r <name of result file> -t <number of threads>" << std::endl;
+        std::cout << "[NAWOGREP] Too few arguments! " << std::endl
+                  << "[NAWOGREP] Usage: <pattern> -d <start directory> -l <name of log file> -r <name of result file> -t <number of threads>" << std::endl;
     }
     pattern = argv[1];
     for (int i = 2; i < argc; i++) {
         std::string arg = argv[i];
+        pattern.insert(0, 1, ' ');
+        pattern.push_back(' ');
         if (arg == "-d" || arg == "--dir") {
             startSearchDirection = argv[++i];
         } else if (arg == "-l" || arg == "--log_file") {
@@ -27,18 +23,18 @@ void Grep::parseArguments(const int& argc, char* argv[]) {
         } else if (arg == "-t" || arg == "--threads") {
             numberOfThreads = std::stoi(argv[++i]);
         } else {
-            std::cerr << "[NAWOGREP] Invalid argument: " << arg << std::endl;
-            std::cout << "[NAWOGREP] Usage: <pattern> -d <start directory> -l <name of log file> -r <name of result file> -t <number of threads>" << std::endl;
+            std::cout << "[NAWOGREP] Invalid argument: " << arg << std::endl
+                      << "[NAWOGREP] Usage: <pattern> -d <start directory> -l <name of log file> -r <name of result file> -t <number of threads>" << std::endl;
         }
     }
 }
 
 void Grep::searchFiles() {
-    start = std::chrono::high_resolution_clock::now();
+    startProgramTime = std::chrono::high_resolution_clock::now();
 
     std::filesystem::path folderPath(startSearchDirection);
     if (!std::filesystem::exists(folderPath)) {
-        std::cerr << "[NAWOGREP] The folder does not exist!" << std::endl;
+        std::cout << "[NAWOGREP] The folder does not exist!" << std::endl;
         return;
     }
 
@@ -51,46 +47,48 @@ void Grep::searchFiles() {
 }
 
 void Grep::parseFiles() {
-    pattern.insert(0, 1, ' ');
-    pattern.push_back(' ');
-
     while (!filesToParse.empty()) {
         std::ifstream file(filesToParse.front().path().string());
         while (std::getline(file, lineInFile)) {
             if (std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end()) != lineInFile.end()) {
-                saveToResultFile(filesToParse.front(), lineNumber, lineInFile);
-                patternsNumber++;
                 if (find == false) {
                     filesWithPattern++;
                     find = true;
                 }
+                patternsNumber++;
+                inFilePatternsNumber++;
+                findedFiles.emplace_back(filesToParse.front(), lineInFile, lineNumber, inFilePatternsNumber, 15);
             }
             lineNumber++;
         }
         find = false;
+        inFilePatternsNumber = 0;
         lineNumber = 0;
         lineInFile.clear();
         filesToParse.pop();
     }
 }
 
-void Grep::saveToResultFile(const std::filesystem::directory_entry& file, const int& lineNumber, const std::string& lineString) {
-    std::cout << file << ":" << lineNumber << ": " << lineString << std::endl;
+void Grep::saveToResultFile() {
+    std::sort(findedFiles.begin(), findedFiles.end(), [](const auto& lhs, const auto& rhs) { return lhs.inFilePatternsNumber_ < rhs.inFilePatternsNumber_; });
+    for (const auto& a : findedFiles) {
+        std::cout << a.filePatch_ << ":" << a.inFilePatternsNumber_ << ":" << a.lineNumber_ << ":" << a.threadID_ << ":" << a.lineString_ << std::endl;
+    }
 }
 
-void Grep::saveToLogFile(const long& threadID, const std::string& fileName) {
+void Grep::saveToLogFile() {
 }
 
 void Grep::printVariables() {
-    end = std::chrono::high_resolution_clock::now();
-    std::cout << "Searched files: " << searchedFiles << std::endl;
-    std::cout << "Files with pattern: " << filesWithPattern << std::endl;
-    std::cout << "Patterns number: " << patternsNumber << std::endl;
-    std::cout << "Result file: " << resultFile << std::endl;
-    std::cout << "Log file: " << logFile << std::endl;
-    std::cout << "Number of threads: " << numberOfThreads << std::endl;
-    std::cout << "Elapsed time: "
-              << std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count()
+    endProgramTime = std::chrono::high_resolution_clock::now();
+    std::cout << "Searched files: " << searchedFiles << std::endl
+              << "Files with pattern: " << filesWithPattern << std::endl
+              << "Patterns number: " << patternsNumber << std::endl
+              << "Result file: " << resultFile << std::endl
+              << "Log file: " << logFile << std::endl
+              << "Number of threads: " << numberOfThreads << std::endl
+              << "Elapsed time: "
+              << std::chrono::duration_cast<std::chrono::milliseconds>(endProgramTime - startProgramTime).count()
               << "[ms]"
               << std::endl;
 }
@@ -98,5 +96,7 @@ void Grep::printVariables() {
 void Grep::run() {
     searchFiles();
     parseFiles();
+    saveToResultFile();
+    saveToLogFile();
     printVariables();
 }
