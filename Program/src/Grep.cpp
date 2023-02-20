@@ -13,19 +13,20 @@ void Grep::parseArguments(const int& argc, char* argv[]) {
     pattern = argv[1];
     pattern.insert(0, 1, ' ');
     pattern.push_back(' ');
+
     for (int i = 2; i < argc; i++) {
-        if (argv[i] == "-d" || argv[i] == "--dir") {
+        std::string arg = argv[i];
+        if (arg == "-d" || arg == "--dir") {
             startSearchDirection = argv[++i];
-        } else if (argv[i] == "-l" || argv[i] == "--log_file") {
+        } else if (arg == "-l" || arg == "--log_file") {
             logFile = argv[++i];
-        } else if (argv[i] == "-r" || argv[i] == "--result_file") {
+        } else if (arg == "-r" || arg == "--result_file") {
             resultFile = argv[++i];
-        } else if (argv[i] == "-t" || argv[i] == "--threads") {
+        } else if (arg == "-t" || arg == "--threads") {
             numberOfThreads = std::stoi(argv[++i]);
         } else {
-            std::cout << "[NAWOGREP] Invalid argument: " << argv[i] << std::endl
+            std::cout << "[NAWOGREP] Invalid argument: " << arg << std::endl
                       << "[NAWOGREP] Usage: <pattern> -d <start directory> -l <name of log file> -r <name of result file> -t <number of threads>" << std::endl;
-            exit(0);
         }
     }
 }
@@ -44,9 +45,12 @@ void Grep::searchFiles() {
     for (const auto& entry : std::filesystem::recursive_directory_iterator(folderPath)) {
         searchedFiles++;
         if (entry.is_regular_file() && entry.path().extension() == ".txt") {
-            filesToParse.emplace(entry.path());
+            if ((std::filesystem::status(entry).permissions() & std::filesystem::perms::owner_read) != std::filesystem::perms::none) {
+                filesToParse.emplace(entry.path());
+            }
         }
     }
+    std::cout << "Search complete";
 }
 
 void Grep::parseFiles() {
@@ -56,7 +60,6 @@ void Grep::parseFiles() {
             queueMutex.unlock();
             break;
         }
-
         while (!filesToParse.empty()) {
             std::thread::id thisThreadId = std::this_thread::get_id();
             std::ifstream file(filesToParse.front().path().string());
@@ -65,13 +68,15 @@ void Grep::parseFiles() {
                     if (find == false) {
                         filesWithPattern++;
                         find = true;
+                        findedFiles.emplace_back(filesToParse.front(), thisThreadId);
                     }
                     patternsNumber++;
                     inFilePatternsNumber++;
-                    findedFiles.emplace_back(filesToParse.front(), lineInFile, lineNumber, inFilePatternsNumber, thisThreadId);
+                    findedFiles.front().lines.emplace_back(lineNumber, lineInFile);
                 }
                 lineNumber++;
             }
+            findedFiles.front().inFilePatternsNumber_ = inFilePatternsNumber;
             find = false;
             inFilePatternsNumber = 0;
             lineNumber = 0;
@@ -94,10 +99,11 @@ void Grep::processFilesInQueue() {
 
 void Grep::saveToResultFile() {
     std::sort(findedFiles.begin(), findedFiles.end(), [](const auto& lhs, const auto& rhs) { return lhs.inFilePatternsNumber_ < rhs.inFilePatternsNumber_; });
-    std::ofstream fileToWriteResuult("../" + resultFile);
+    std::ofstream fileToWriteResuult(resultFile, std::ios::out | std::ios::trunc);
     if (fileToWriteResuult.is_open()) {
-        for (const auto& a : findedFiles) {
-            fileToWriteResuult << a.filePatch_ << ":" << a.lineNumber_ << ": " << a.lineString_ << std::endl;
+        for (const auto& file : findedFiles) {
+            for (const auto& element : file.lines)
+                fileToWriteResuult << file.filePatch_ << ":" << element.first << ": " << element.second << std::endl;
         }
         fileToWriteResuult.close();
     }
