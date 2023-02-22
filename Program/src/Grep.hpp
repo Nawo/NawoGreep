@@ -7,6 +7,7 @@
 #include <iostream>
 #include <mutex>
 #include <queue>
+#include <stack>
 #include <string>
 #include <thread>
 
@@ -29,7 +30,7 @@ private:
     int inFilePatternsNumber = 0;
     bool find = false;
 
-    std::queue<std::filesystem::directory_entry> filesToParse;
+    std::vector<std::filesystem::directory_entry> filesToParse;
     std::vector<FindedFiles> findedFiles;
 
     std::mutex queueMutex;

@@ -37,20 +37,29 @@ void Grep::getStartTime() {
 
 void Grep::searchFiles() {
     std::filesystem::path folderPath(startSearchDirection);
-    if (!std::filesystem::exists(folderPath)) {
-        std::cout << "[NAWOGREP] The folder " << folderPath << " does not exist!" << std::endl;
-        exit(0);
-    }
 
-    for (const auto& entry : std::filesystem::recursive_directory_iterator(folderPath)) {
-        searchedFiles++;
-        if (entry.is_regular_file() && entry.path().extension() == ".txt") {
-            if ((std::filesystem::status(entry).permissions() & std::filesystem::perms::owner_read) != std::filesystem::perms::none) {
-                filesToParse.emplace(entry.path());
+    if (std::filesystem::exists(folderPath)) {
+        if (std::filesystem::is_directory(folderPath)) {
+            std::vector<std::filesystem::path> foldersToSearch{folderPath};
+
+            while (!foldersToSearch.empty()) {
+                auto currentFolder = foldersToSearch.back();
+                foldersToSearch.pop_back();
+                for (const auto& entry : std::filesystem::directory_iterator(currentFolder)) {
+                    if (entry.is_regular_file()) {
+                        std::cout << "ANY: " << entry << "\n";
+                        searchedFiles++;
+                        if (entry.path().extension() == ".txt") {
+                            std::cout << ".TXT: " << entry << "\n";
+                            filesToParse.emplace_back(entry.path().string());
+                        }
+                    } else if (entry.is_directory()) {
+                        foldersToSearch.emplace_back(entry.path());
+                    }
+                }
             }
         }
     }
-    std::cout << "Search complete";
 }
 
 void Grep::parseFiles() {
@@ -62,26 +71,26 @@ void Grep::parseFiles() {
         }
         while (!filesToParse.empty()) {
             std::thread::id thisThreadId = std::this_thread::get_id();
-            std::ifstream file(filesToParse.front().path().string());
+            std::ifstream file(filesToParse.back().path());
             while (std::getline(file, lineInFile)) {
                 if (std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end()) != lineInFile.end()) {
                     if (find == false) {
                         filesWithPattern++;
                         find = true;
-                        findedFiles.emplace_back(filesToParse.front(), thisThreadId);
+                        findedFiles.emplace_back(filesToParse.back(), thisThreadId);
+                        std::cout << filesToParse.back() << std::endl;
                     }
                     patternsNumber++;
                     inFilePatternsNumber++;
-                    findedFiles.front().lines.emplace_back(lineNumber, lineInFile);
+                    findedFiles.back().lines.emplace_back(lineNumber, lineInFile);
                 }
                 lineNumber++;
             }
-            findedFiles.front().inFilePatternsNumber_ = inFilePatternsNumber;
+            // findedFiles.back().inFilePatternsNumber_ = inFilePatternsNumber;
             find = false;
             inFilePatternsNumber = 0;
             lineNumber = 0;
-            lineInFile.clear();
-            filesToParse.pop();
+            filesToParse.pop_back();
         }
         queueMutex.unlock();
     }

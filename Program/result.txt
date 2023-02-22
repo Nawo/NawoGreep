@@ -1,0 +1,19 @@
+".\\\\..\\\\test\\test2.txt":5: Hank has been building a Virtual Youtuber empire for over a year now and using me as his recruiter. 
+".\\\\..\\\\test\\test2.txt":6: Shortly after my 50th birthday, Hank came to me with a rather, shocking proposition. 
+".\\\\..\\\\test\\test2.txt":9: I was... astounded, I... I always thought that Hank was a very moral man and I was... 
+".\\\\..\\\\test\\test2.txt":11: I was reeling from a cancer diagnosis that was poised to bankrupt my family. 
+".\\\\..\\\\test\\test2.txt":12: Hank took me on a ride along, and showed me just how much money even a small indie channel could make. 
+".\\\\..\\\\test\\test2.txt":15: I quickly realized that I was in way over my head, and Hank had a partner, a man named Motoaki "Yagoo" Tanigo, a businessman. 
+".\\\\..\\\\test\\test2.txt":17: I didn't know where to turn. Eventually, Hank and Yagoo had a falling out. 
+".\\\\..\\\\test\\test2.txt":18: From what I can gather, Hank was always pushing for a greater share of the business, to which Yagoo flatly refused to give him, and things escalated. 
+".\\\\..\\\\test\\test2.txt":19: Yagoo was able to arrange, uh I guess I guess you call it a "hit" on my brother-in-law, 
+".\\\\..\\\\test\\test2.txt":21: amounted to a little over $177,000. Upon recovery, Hank was bent on revenge, working with 
+".\\\\..\\\\test\\test2.txt":23: built by me, and he gave me no option in it. I have often contemplated suicide, but I'm a coward. 
+".\\\\..\\\\test\\test3.txt":14: Hey now, you're a rock star, get the show on, get paid
+".\\\\..\\\\test\\test3.txt":17: It's a cool place and they say it gets colder
+".\\\\..\\\\test\\test3.txt":26: Hey now, you're a rock star, get the show on, get paid
+".\\\\..\\\\test\\test3.txt":30: Hey now, you're a rock star, get the show, on get paid
+".\\\\..\\\\test\\test3.txt":35: I said, "Yup" what a concept
+".\\\\..\\\\test\\test3.txt":36: I could use a little fuel myself
+".\\\\..\\\\test\\test3.txt":37: And we could all use a little change
+".\\\\..\\\\test\\test3.txt":47: Hey now, you're a rock star, get the show on, get paid
