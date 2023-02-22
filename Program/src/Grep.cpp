@@ -74,11 +74,11 @@ void Grep::parseFiles() {
             std::ifstream file(filesToParse.back().path());
             while (std::getline(file, lineInFile)) {
                 if (std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end()) != lineInFile.end()) {
+                    // TO DO sprawdzanie prefixow i sufixow patternie
                     if (find == false) {
                         filesWithPattern++;
                         find = true;
                         findedFiles.emplace_back(filesToParse.back(), thisThreadId);
-                        std::cout << filesToParse.back() << std::endl;
                     }
                     patternsNumber++;
                     inFilePatternsNumber++;
@@ -91,6 +91,7 @@ void Grep::parseFiles() {
             inFilePatternsNumber = 0;
             lineNumber = 0;
             filesToParse.pop_back();
+            filesToParse.shrink_to_fit();
         }
         queueMutex.unlock();
     }
@@ -107,7 +108,7 @@ void Grep::processFilesInQueue() {
 }
 
 void Grep::saveToResultFile() {
-    std::sort(findedFiles.begin(), findedFiles.end(), [](const auto& lhs, const auto& rhs) { return lhs.inFilePatternsNumber_ < rhs.inFilePatternsNumber_; });
+    std::sort(findedFiles.begin(), findedFiles.end(), [](const auto& lhs, const auto& rhs) { return lhs.inFilePatternsNumber_ > rhs.inFilePatternsNumber_; });
     std::ofstream fileToWriteResuult(resultFile, std::ios::out | std::ios::trunc);
     if (fileToWriteResuult.is_open()) {
         for (const auto& file : findedFiles) {
