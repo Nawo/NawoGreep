@@ -86,7 +86,7 @@ void Grep::parseFiles() {
                 }
                 lineNumber++;
             }
-            // findedFiles.back().inFilePatternsNumber_ = inFilePatternsNumber;
+            findedFiles.back().setInFilePatternsNumber(inFilePatternsNumber);
             find = false;
             inFilePatternsNumber = 0;
             lineNumber = 0;
@@ -99,16 +99,19 @@ void Grep::parseFiles() {
 
 void Grep::processFilesInQueue() {
     for (int i = 0; i < numberOfThreads; i++) {
-        threads.push_back(std::thread([&]() { parseFiles(); }));
+        threads.push_back(std::make_pair(std::thread([&]() {
+                                             parseFiles();
+                                         }),
+                                         std::this_thread::get_id()));
     }
 
     for (auto& thread : threads) {
-        thread.join();
+        thread.first.join();
     }
 }
 
 void Grep::saveToResultFile() {
-    std::sort(findedFiles.begin(), findedFiles.end(), [](const auto& lhs, const auto& rhs) { return lhs.inFilePatternsNumber_ > rhs.inFilePatternsNumber_; });
+    std::sort(findedFiles.begin(), findedFiles.end(), [](const auto& lhs, const auto& rhs) { return lhs.getInFilePatternsNumber() > rhs.getInFilePatternsNumber(); });
     std::ofstream fileToWriteResuult(resultFile, std::ios::out | std::ios::trunc);
     if (fileToWriteResuult.is_open()) {
         for (const auto& file : findedFiles) {
@@ -120,8 +123,21 @@ void Grep::saveToResultFile() {
 }
 
 void Grep::saveToLogFile() {
+    // sorted from the thread id with the most files number and ending with the least, (here are only file names, not full paths to files).
+
+    // 140035841935104: file6, file 4
+    // 140035825149696: file2
+    // 140035833542400:
+    // 140035855147214:
+    std::multimap<std::thread::id, std::string> toLogFile;
     for (auto& thread : threads) {
-        // TO DO
+        for (const auto& file : findedFiles) {
+            toLogFile.emplace(thread.second, file.getFilePatch().path().filename().string());
+            // std::cout << thread.second << ": " << file.filePatch_.path().filename().string() << std::endl;
+        }
+    }
+    for (auto& a : toLogFile) {
+        std::cout << a.first << ": " << a.second << std::endl;
     }
 }
 
@@ -135,7 +151,7 @@ void Grep::printVariables() {
               << "Patterns number: " << patternsNumber << std::endl
               << "Result file: " << resultFile << std::endl
               << "Log file: " << logFile << std::endl
-              << "Number of threads: " << numberOfThreads << std::endl
+              << "Used threads: " << numberOfThreads << std::endl
               << "Elapsed time: "
               << std::chrono::duration_cast<std::chrono::milliseconds>(endProgramTime - startProgramTime).count()
               << "[ms]"

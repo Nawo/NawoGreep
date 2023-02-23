@@ -1,11 +1,11 @@
-".\\\\..\\\\test\\test3.txt":1: Somebody once told me the world is gonna roll me
-".\\\\..\\\\test\\test3.txt":15: And all that glitters is gold
-".\\\\..\\\\test\\test3.txt":21: The ice we skate is getting pretty thin
-".\\\\..\\\\test\\test3.txt":27: All that glitters is gold
-".\\\\..\\\\test\\test3.txt":31: And all that glitters is gold
-".\\\\..\\\\test\\test3.txt":48: And all that glitters is gold
-".\\\\..\\\\test\\test3.txt":50: And all that glitters is gold
-".\\\\..\\\\test\\test2.txt":1: My name is Walter Hartwell White. 
-".\\\\..\\\\test\\test2.txt":3: This is my confession. 
-".\\\\..\\\\test\\test1.txt":0: My name is Roman Nawrot. 
-".\\\\..\\\\test\\test1.txt":1: this is a test file
+".//..//test\\test3.txt":1: Somebody once told me the world is gonna roll me
+".//..//test\\test3.txt":15: And all that glitters is gold
+".//..//test\\test3.txt":21: The ice we skate is getting pretty thin
+".//..//test\\test3.txt":27: All that glitters is gold
+".//..//test\\test3.txt":31: And all that glitters is gold
+".//..//test\\test3.txt":48: And all that glitters is gold
+".//..//test\\test3.txt":50: And all that glitters is gold
+".//..//test\\test2.txt":1: My name is Walter Hartwell White. 
+".//..//test\\test2.txt":3: This is my confession. 
+".//..//test\\test1.txt":0: My name is Roman Nawrot. 
+".//..//test\\test1.txt":1: this is a test file

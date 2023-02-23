@@ -4,12 +4,16 @@ FindedFiles::FindedFiles(const std::filesystem::directory_entry& filePatch, cons
     : filePatch_(filePatch),
       threadID_(threadID){};
 
-std::filesystem::directory_entry FindedFiles::getFilePatch() {
+std::filesystem::directory_entry FindedFiles::getFilePatch() const {
     return filePatch_;
 }
-int FindedFiles::getInFilePatternsNumber() {
+int FindedFiles::getInFilePatternsNumber() const {
     return inFilePatternsNumber_;
 }
 std::thread::id FindedFiles::getThreadID() {
     return threadID_;
+}
+
+void FindedFiles::setInFilePatternsNumber(const int& _InFilePatternsNumber) {
+    inFilePatternsNumber_ = _InFilePatternsNumber;
 }

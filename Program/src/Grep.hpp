@@ -5,6 +5,7 @@
 #include <filesystem>
 #include <fstream>
 #include <iostream>
+#include <map>
 #include <mutex>
 #include <queue>
 #include <stack>
@@ -34,7 +35,7 @@ private:
     std::vector<FindedFiles> findedFiles;
 
     std::mutex queueMutex;
-    std::vector<std::thread> threads;
+    std::vector<std::pair<std::thread, std::thread::id>> threads;
     void processFilesInQueue();
 
     std::chrono::time_point<std::chrono::system_clock> startProgramTime;
