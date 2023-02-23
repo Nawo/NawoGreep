@@ -1,11 +1,359 @@
-".//..//test\\test3.txt":1: Somebody once told me the world is gonna roll me
-".//..//test\\test3.txt":15: And all that glitters is gold
-".//..//test\\test3.txt":21: The ice we skate is getting pretty thin
-".//..//test\\test3.txt":27: All that glitters is gold
-".//..//test\\test3.txt":31: And all that glitters is gold
-".//..//test\\test3.txt":48: And all that glitters is gold
-".//..//test\\test3.txt":50: And all that glitters is gold
-".//..//test\\test2.txt":1: My name is Walter Hartwell White. 
-".//..//test\\test2.txt":3: This is my confession. 
-".//..//test\\test1.txt":0: My name is Roman Nawrot. 
-".//..//test\\test1.txt":1: this is a test file
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-subbuild\\CMakeLists.txt":7: # something goes wrong and an error message is produced.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":26: Called 2 times, but only 1 WillOnce() is specified - returning default value.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":38:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":51:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":95:          Expected: the expectation is active
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":96:            Actual: it is retired
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":100:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":102:   Expected arg #1: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":116:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":137:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":177:            Actual: "Ho", which is located @0x#
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":178:   Expected arg #2: is >= 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":206:   Expected arg #0: is >= 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":223:   Expected arg #0: is equal to 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":225:   Expected arg #1: is equal to 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":238:   Expected arg #0: is equal to 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":240:   Expected arg #1: is equal to 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":284: Called 2 times, but only 1 WillOnce() is specified - taking default action specified at:
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":293: Expected: is pair (first: is >= 48, second: true)
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":313: FILE:#: ERROR: this mock object should be deleted but never is. Its address is @0x#.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":314: FILE:#: ERROR: this mock object should be deleted but never is. Its address is @0x#.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":315: FILE:#: ERROR: this mock object should be deleted but never is. Its address is @0x#.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":316: ERROR: 3 leaked mock objects found at program exit. Expectations on a mock object are verified when the object is destructed. Leaking a mock means that its expectations aren't verified, which is usually a test bug. If you really intend to leak a mock, you can suppress this error using testing::Mock::AllowLeak(mock_object), or you may use a fake or stub instead of a mock.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\CMakeLists.txt":0: # Note: CMake support is community-based. The maintainers do not use CMake
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-subbuild\\googletest-populate-prefix\\src\\googletest-populate-stamp\\googletest-populate-gitinfo.txt":0: # This is a generated file and its contents are an internal implementation detail.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-subbuild\\googletest-populate-prefix\\src\\googletest-populate-stamp\\googletest-populate-gitinfo.txt":2: # No other meaning or use of this file is supported.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":1: # Note: CMake support is community-based. The maintainers do not use CMake
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":14:   "Use shared (DLL) run-time lib even when Google Test is built as static lib."
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":44: # Language "C" is required for find_package(Threads).
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":60: # These commands only run if this is the main project
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":63:   # BUILD_SHARED_LIBS is a standard CMake variable, but we declare it here to
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":278:   if (NOT MSVC OR MSVC_VERSION GREATER 1310)  # 1310 is Visual Studio .NET 2003
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-subbuild\\CMakeLists.txt":7: # something goes wrong and an error message is produced.
+"../../../..\\Work\\TietoEvry\\Program\\build\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Work\\TietoEvry\\Program\\build\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Work\\TietoEvry\\Program\\build\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Work\\TietoEvry\\Program\\build\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Work\\TietoEvry\\Program\\build\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Work\\TietoEvry\\Program\\build\\CMakeCache.txt":232: //If this value is on, makefiles will be generated without the
+"../../../..\\Work\\TietoEvry\\Program\\build\\CMakeCache.txt":234: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Work\\TietoEvry\\Program\\build\\CMakeCache.txt":256: //This is the directory where this CMakeCache.txt was created
+"../../../..\\SFML\\examples\\cocoa\\CMakeLists.txt":17:         message(FATAL_ERROR "ibtool is required to compile .xib files but wasn't found.")
+"../../../..\\SFML\\src\\SFML\\Graphics\\CMakeLists.txt":133: # when gcc is used; otherwise saving PNGs may crash in stb_image_write
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":0: The non-test part of the code is expected to have 2 failures.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":134: This failure is expected, and shouldn't have a trace.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":139: This failure is expected, and should have a trace.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":146: This failure is expected, and shouldn't have a trace.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":209: This failure is expected, and should contain trace point A.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":216: This failure is expected, and should contain trace point A and B.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":224: This failure is expected, and should contain trace point A, B, and C.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":233: This failure is expected, and should contain trace point A, B, and D.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":286: Check that the trace is attached to a particular location.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":450: test DefinedUsingTEST_F is defined using TEST_F but
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":451: test DefinedUsingTESTAndShouldFail is defined using TEST.  You probably
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":466: test DefinedUsingTEST_FAndShouldFail is defined using TEST_F but
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":467: test DefinedUsingTEST is defined using TEST.  You probably
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":925: test FixtureBase is defined using TEST_F but
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":926: test TestBase is defined using TEST.  You probably
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":998: Parameterized test suite NoTests is instantiated via INSTANTIATE_TEST_SUITE_P, but no tests are defined via TEST_P . No test cases will run.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1000: Ideally, INSTANTIATE_TEST_SUITE_P should only ever be invoked from code that always depend on code that provides TEST_P. Failing to do so is often an indication of dead code, e.g. the last TEST_P was removed but the rest got left behind.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1002: To suppress this error for this test suite, insert the following line (in a non-header) in the namespace it is defined in:
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1010: Parameterized test suite DetectNotInstantiatedTest is defined via TEST_P, but never instantiated. None of the test cases will run. Either no INSTANTIATE_TEST_SUITE_P is provided or the only ones provided expand to nothing.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1014: To suppress this error for this test suite, insert the following line (in a non-header) in the namespace it is defined in:
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1022: Type parameterized test suite DetectNotInstantiatedTypesTest is defined via REGISTER_TYPED_TEST_SUITE_P, but never instantiated via INSTANTIATE_TYPED_TEST_SUITE_P. None of the test cases will run.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1026: To suppress this error for this test suite, insert the following line (in a non-header) in the namespace it is defined in:
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1187: Note: This is test shard 2 of 2.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":1: # Note: CMake support is community-based. The maintainers do not use CMake
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":14:   "Use shared (DLL) run-time lib even when Google Test is built as static lib."
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":44: # Language "C" is required for find_package(Threads).
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":60: # These commands only run if this is the main project
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":63:   # BUILD_SHARED_LIBS is a standard CMake variable, but we declare it here to
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":278:   if (NOT MSVC OR MSVC_VERSION GREATER 1310)  # 1310 is Visual Studio .NET 2003
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-subbuild\\googletest-populate-prefix\\src\\googletest-populate-stamp\\googletest-populate-gitinfo.txt":0: # This is a generated file and its contents are an internal implementation detail.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-subbuild\\googletest-populate-prefix\\src\\googletest-populate-stamp\\googletest-populate-gitinfo.txt":2: # No other meaning or use of this file is supported.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":0: The non-test part of the code is expected to have 2 failures.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":134: This failure is expected, and shouldn't have a trace.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":139: This failure is expected, and should have a trace.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":146: This failure is expected, and shouldn't have a trace.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":209: This failure is expected, and should contain trace point A.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":216: This failure is expected, and should contain trace point A and B.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":224: This failure is expected, and should contain trace point A, B, and C.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":233: This failure is expected, and should contain trace point A, B, and D.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":286: Check that the trace is attached to a particular location.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":450: test DefinedUsingTEST_F is defined using TEST_F but
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":451: test DefinedUsingTESTAndShouldFail is defined using TEST.  You probably
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":466: test DefinedUsingTEST_FAndShouldFail is defined using TEST_F but
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":467: test DefinedUsingTEST is defined using TEST.  You probably
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":925: test FixtureBase is defined using TEST_F but
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":926: test TestBase is defined using TEST.  You probably
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":998: Parameterized test suite NoTests is instantiated via INSTANTIATE_TEST_SUITE_P, but no tests are defined via TEST_P . No test cases will run.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1000: Ideally, INSTANTIATE_TEST_SUITE_P should only ever be invoked from code that always depend on code that provides TEST_P. Failing to do so is often an indication of dead code, e.g. the last TEST_P was removed but the rest got left behind.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1002: To suppress this error for this test suite, insert the following line (in a non-header) in the namespace it is defined in:
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1010: Parameterized test suite DetectNotInstantiatedTest is defined via TEST_P, but never instantiated. None of the test cases will run. Either no INSTANTIATE_TEST_SUITE_P is provided or the only ones provided expand to nothing.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1014: To suppress this error for this test suite, insert the following line (in a non-header) in the namespace it is defined in:
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1022: Type parameterized test suite DetectNotInstantiatedTypesTest is defined via REGISTER_TYPED_TEST_SUITE_P, but never instantiated via INSTANTIATE_TYPED_TEST_SUITE_P. None of the test cases will run.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1026: To suppress this error for this test suite, insert the following line (in a non-header) in the namespace it is defined in:
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1187: Note: This is test shard 2 of 2.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":26: Called 2 times, but only 1 WillOnce() is specified - returning default value.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":38:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":51:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":95:          Expected: the expectation is active
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":96:            Actual: it is retired
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":100:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":102:   Expected arg #1: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":116:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":137:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":177:            Actual: "Ho", which is located @0x#
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":178:   Expected arg #2: is >= 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":206:   Expected arg #0: is >= 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":223:   Expected arg #0: is equal to 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":225:   Expected arg #1: is equal to 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":238:   Expected arg #0: is equal to 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":240:   Expected arg #1: is equal to 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":284: Called 2 times, but only 1 WillOnce() is specified - taking default action specified at:
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":293: Expected: is pair (first: is >= 48, second: true)
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":313: FILE:#: ERROR: this mock object should be deleted but never is. Its address is @0x#.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":314: FILE:#: ERROR: this mock object should be deleted but never is. Its address is @0x#.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":315: FILE:#: ERROR: this mock object should be deleted but never is. Its address is @0x#.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":316: ERROR: 3 leaked mock objects found at program exit. Expectations on a mock object are verified when the object is destructed. Leaking a mock means that its expectations aren't verified, which is usually a test bug. If you really intend to leak a mock, you can suppress this error using testing::Mock::AllowLeak(mock_object), or you may use a fake or stub instead of a mock.
+"../../../..\\Coders_School\\Modern C++\\modern-cpp\\shapes\\build\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Coders_School\\Modern C++\\modern-cpp\\shapes\\build\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Coders_School\\Modern C++\\modern-cpp\\shapes\\build\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Coders_School\\Modern C++\\modern-cpp\\shapes\\build\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Coders_School\\Modern C++\\modern-cpp\\shapes\\build\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Coders_School\\Modern C++\\modern-cpp\\shapes\\build\\CMakeCache.txt":232: //If this value is on, makefiles will be generated without the
+"../../../..\\Coders_School\\Modern C++\\modern-cpp\\shapes\\build\\CMakeCache.txt":234: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Coders_School\\Modern C++\\modern-cpp\\shapes\\build\\CMakeCache.txt":256: //This is the directory where this CMakeCache.txt was created
+"../../../..\\Coders_School\\Modern C++\\lambdas\\Build\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Coders_School\\Modern C++\\lambdas\\Build\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Coders_School\\Modern C++\\lambdas\\Build\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Coders_School\\Modern C++\\lambdas\\Build\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Coders_School\\Modern C++\\lambdas\\Build\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Coders_School\\Modern C++\\lambdas\\Build\\CMakeCache.txt":232: //If this value is on, makefiles will be generated without the
+"../../../..\\Coders_School\\Modern C++\\lambdas\\Build\\CMakeCache.txt":234: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Coders_School\\Modern C++\\lambdas\\Build\\CMakeCache.txt":256: //This is the directory where this CMakeCache.txt was created
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\CMakeLists.txt":0: # Note: CMake support is community-based. The maintainers do not use CMake
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-subbuild\\googletest-populate-prefix\\src\\googletest-populate-stamp\\googletest-populate-gitinfo.txt":0: # This is a generated file and its contents are an internal implementation detail.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-subbuild\\googletest-populate-prefix\\src\\googletest-populate-stamp\\googletest-populate-gitinfo.txt":2: # No other meaning or use of this file is supported.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\CMakeLists.txt":0: # Note: CMake support is community-based. The maintainers do not use CMake
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\CMakeCache.txt":301: //If this value is on, makefiles will be generated without the
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\CMakeCache.txt":303: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\CMakeCache.txt":383: //Use shared (DLL) run-time lib even when Google Test is built
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\CMakeCache.txt":411: //This is the directory where this CMakeCache.txt was created
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-subbuild\\googletest-populate-prefix\\src\\googletest-populate-stamp\\googletest-populate-gitclone-lastrun.txt":0: # This is a generated file and its contents are an internal implementation detail.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-subbuild\\googletest-populate-prefix\\src\\googletest-populate-stamp\\googletest-populate-gitclone-lastrun.txt":2: # No other meaning or use of this file is supported.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\CMakeCache.txt":301: //If this value is on, makefiles will be generated without the
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\CMakeCache.txt":303: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\CMakeCache.txt":383: //Use shared (DLL) run-time lib even when Google Test is built
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\CMakeCache.txt":411: //This is the directory where this CMakeCache.txt was created
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":44: //If this value is on, makefiles will be generated without the
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":46: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":64: //This is the directory where this CMakeCache.txt was created
+"../../../..\\SFML\\CMakeLists.txt":63: sfml_set_option(SFML_BUILD_WINDOW TRUE BOOL "TRUE to build SFML's Window module. This setting is ignored, if the graphics module is built.")
+"../../../..\\SFML\\CMakeLists.txt":98:     # At the moment the minimal deployement target version is 10.2 only because the externals for iOS were built with that requirement.
+"../../../..\\SFML\\CMakeLists.txt":124:     # install everything in $NDK/sources/ because this path is appended by the NDK (convenient)
+"../../../..\\SFML\\CMakeLists.txt":137:     # this is a workaround to compile sfml-activity without the stl library as a dependency
+"../../../..\\SFML\\CMakeLists.txt":155: # force building sfml-window, if sfml-graphics module is built
+"../../../..\\SFML\\CMakeLists.txt":163: # yes this is horrible, but GLOB_RECURSE sucks
+"../../../..\\SFML\\CMakeLists.txt":210:     # the following combination of flags is not valid
+"../../../..\\SFML\\CMakeLists.txt":220:     #    (because cmake currently doesn't allow specifying a custom framework name so XXX-d is not possible)
+"../../../..\\SFML\\CMakeLists.txt":225:             message(FATAL_ERROR "CMAKE_BUILD_TYPE should be \"Release\" when SFML_BUILD_FRAMEWORKS is TRUE")
+"../../../..\\SFML\\CMakeLists.txt":231:             message(FATAL_ERROR "BUILD_SHARED_LIBS should be TRUE when SFML_BUILD_FRAMEWORKS is TRUE")
+"../../../..\\SFML\\build\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\SFML\\build\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\SFML\\build\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\SFML\\build\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\SFML\\build\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\SFML\\build\\CMakeCache.txt":308: //If this value is on, makefiles will be generated without the
+"../../../..\\SFML\\build\\CMakeCache.txt":310: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\SFML\\build\\CMakeCache.txt":392: //TRUE to build SFML's Window module. This setting is ignored,
+"../../../..\\SFML\\build\\CMakeCache.txt":393: // if the graphics module is built.
+"../../../..\\SFML\\build\\CMakeCache.txt":448: //This is the directory where this CMakeCache.txt was created
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":44: //If this value is on, makefiles will be generated without the
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":46: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":64: //This is the directory where this CMakeCache.txt was created
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":0: The non-test part of the code is expected to have 2 failures.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":134: This failure is expected, and shouldn't have a trace.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":139: This failure is expected, and should have a trace.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":146: This failure is expected, and shouldn't have a trace.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":209: This failure is expected, and should contain trace point A.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":216: This failure is expected, and should contain trace point A and B.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":224: This failure is expected, and should contain trace point A, B, and C.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":233: This failure is expected, and should contain trace point A, B, and D.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":286: Check that the trace is attached to a particular location.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":450: test DefinedUsingTEST_F is defined using TEST_F but
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":451: test DefinedUsingTESTAndShouldFail is defined using TEST.  You probably
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":466: test DefinedUsingTEST_FAndShouldFail is defined using TEST_F but
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":467: test DefinedUsingTEST is defined using TEST.  You probably
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":925: test FixtureBase is defined using TEST_F but
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":926: test TestBase is defined using TEST.  You probably
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":998: Parameterized test suite NoTests is instantiated via INSTANTIATE_TEST_SUITE_P, but no tests are defined via TEST_P . No test cases will run.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1000: Ideally, INSTANTIATE_TEST_SUITE_P should only ever be invoked from code that always depend on code that provides TEST_P. Failing to do so is often an indication of dead code, e.g. the last TEST_P was removed but the rest got left behind.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1002: To suppress this error for this test suite, insert the following line (in a non-header) in the namespace it is defined in:
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1010: Parameterized test suite DetectNotInstantiatedTest is defined via TEST_P, but never instantiated. None of the test cases will run. Either no INSTANTIATE_TEST_SUITE_P is provided or the only ones provided expand to nothing.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1014: To suppress this error for this test suite, insert the following line (in a non-header) in the namespace it is defined in:
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1022: Type parameterized test suite DetectNotInstantiatedTypesTest is defined via REGISTER_TYPED_TEST_SUITE_P, but never instantiated via INSTANTIATE_TYPED_TEST_SUITE_P. None of the test cases will run.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1026: To suppress this error for this test suite, insert the following line (in a non-header) in the namespace it is defined in:
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\test\\googletest-output-test-golden-lin.txt":1187: Note: This is test shard 2 of 2.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-subbuild\\CMakeLists.txt":7: # something goes wrong and an error message is produced.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":1: # Note: CMake support is community-based. The maintainers do not use CMake
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":37: # Language "C" is required for find_package(Threads).
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":53: # These commands only run if this is the main project
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":55:   # BUILD_SHARED_LIBS is a standard CMake variable, but we declare it here to
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":72:   # This directory is needed to build directly from Google Test sources.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":168:   # gmock_all_test is commented to save time building and running tests.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":1: # Note: CMake support is community-based. The maintainers do not use CMake
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":37: # Language "C" is required for find_package(Threads).
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":53: # These commands only run if this is the main project
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":55:   # BUILD_SHARED_LIBS is a standard CMake variable, but we declare it here to
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":72:   # This directory is needed to build directly from Google Test sources.
+"../../../..\\Coders_School\\STL\\stl\\homework\\length-sort\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":168:   # gmock_all_test is commented to save time building and running tests.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":44: //If this value is on, makefiles will be generated without the
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":46: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-subbuild\\CMakeCache.txt":64: //This is the directory where this CMakeCache.txt was created
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":1: # Note: CMake support is community-based. The maintainers do not use CMake
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":14:   "Use shared (DLL) run-time lib even when Google Test is built as static lib."
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":44: # Language "C" is required for find_package(Threads).
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":60: # These commands only run if this is the main project
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":63:   # BUILD_SHARED_LIBS is a standard CMake variable, but we declare it here to
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-src\\googletest\\CMakeLists.txt":278:   if (NOT MSVC OR MSVC_VERSION GREATER 1310)  # 1310 is Visual Studio .NET 2003
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\CMakeCache.txt":301: //If this value is on, makefiles will be generated without the
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\CMakeCache.txt":303: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\CMakeCache.txt":392: //Use shared (DLL) run-time lib even when Google Test is built
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\CMakeCache.txt":411: //This is the directory where this CMakeCache.txt was created
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-subbuild\\googletest-populate-prefix\\src\\googletest-populate-stamp\\googletest-populate-gitclone-lastrun.txt":0: # This is a generated file and its contents are an internal implementation detail.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-subbuild\\googletest-populate-prefix\\src\\googletest-populate-stamp\\googletest-populate-gitclone-lastrun.txt":2: # No other meaning or use of this file is supported.
+"../../../..\\Work\\TietoEvry\\Program\\test\\test3.txt":0: Somebody once told me the world is gonna roll me
+"../../../..\\Work\\TietoEvry\\Program\\test\\test3.txt":14: And all that glitters is gold
+"../../../..\\Work\\TietoEvry\\Program\\test\\test3.txt":20: The ice we skate is getting pretty thin
+"../../../..\\Work\\TietoEvry\\Program\\test\\test3.txt":26: All that glitters is gold
+"../../../..\\Work\\TietoEvry\\Program\\test\\test3.txt":30: And all that glitters is gold
+"../../../..\\Work\\TietoEvry\\Program\\test\\test3.txt":47: And all that glitters is gold
+"../../../..\\Work\\TietoEvry\\Program\\test\\test3.txt":49: And all that glitters is gold
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":0: "../../..\\TietoEvry\\Program\\result.txt":0: ".\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":1: "../../..\\TietoEvry\\Program\\result.txt":1: ".\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":2: "../../..\\TietoEvry\\Program\\result.txt":2: ".\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":3: "../../..\\TietoEvry\\Program\\result.txt":3: ".\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":4: "../../..\\TietoEvry\\Program\\result.txt":4: ".\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":5: "../../..\\TietoEvry\\Program\\result.txt":5: ".\\CMakeCache.txt":232: //If this value is on, makefiles will be generated without the
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":6: "../../..\\TietoEvry\\Program\\result.txt":6: ".\\CMakeCache.txt":234: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":7: "../../..\\TietoEvry\\Program\\result.txt":7: ".\\CMakeCache.txt":256: //This is the directory where this CMakeCache.txt was created
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":8: "../../..\\aero_task\\build\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":9: "../../..\\aero_task\\build\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":10: "../../..\\aero_task\\build\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":11: "../../..\\aero_task\\build\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":12: "../../..\\aero_task\\build\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":13: "../../..\\aero_task\\build\\CMakeCache.txt":243: //If this value is on, makefiles will be generated without the
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":14: "../../..\\aero_task\\build\\CMakeCache.txt":245: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":15: "../../..\\aero_task\\build\\CMakeCache.txt":258: //This is the directory where this CMakeCache.txt was created
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":16: "../../..\\TietoEvry\\Program\\test\\test1.txt":0: My name is Roman Nawrot. 
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":17: "../../..\\TietoEvry\\Program\\test\\test1.txt":1: this is a test file
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":18: "../../..\\TietoEvry\\Program\\build\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":19: "../../..\\TietoEvry\\Program\\build\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":20: "../../..\\TietoEvry\\Program\\build\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":21: "../../..\\TietoEvry\\Program\\build\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":22: "../../..\\TietoEvry\\Program\\build\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":23: "../../..\\TietoEvry\\Program\\build\\CMakeCache.txt":232: //If this value is on, makefiles will be generated without the
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":24: "../../..\\TietoEvry\\Program\\build\\CMakeCache.txt":234: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":25: "../../..\\TietoEvry\\Program\\build\\CMakeCache.txt":256: //This is the directory where this CMakeCache.txt was created
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":26: "../../..\\TietoEvry\\Program\\test\\test3.txt":0: Somebody once told me the world is gonna roll me
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":27: "../../..\\TietoEvry\\Program\\test\\test3.txt":14: And all that glitters is gold
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":28: "../../..\\TietoEvry\\Program\\test\\test3.txt":20: The ice we skate is getting pretty thin
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":29: "../../..\\TietoEvry\\Program\\test\\test3.txt":26: All that glitters is gold
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":30: "../../..\\TietoEvry\\Program\\test\\test3.txt":30: And all that glitters is gold
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":31: "../../..\\TietoEvry\\Program\\test\\test3.txt":47: And all that glitters is gold
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":32: "../../..\\TietoEvry\\Program\\test\\test3.txt":49: And all that glitters is gold
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":33: "../../..\\TietoEvry\\Program\\test\\test2.txt":1: My name is Walter Hartwell White. 
+"../../../..\\Work\\TietoEvry\\Program\\result.txt":34: "../../..\\TietoEvry\\Program\\test\\test2.txt":3: This is my confession. 
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-subbuild\\googletest-populate-prefix\\src\\googletest-populate-stamp\\googletest-populate-gitclone-lastrun.txt":0: # This is a generated file and its contents are an internal implementation detail.
+"../../../..\\Coders_School\\STL\\stl\\homework\\remove-vowels\\build\\_deps\\googletest-subbuild\\googletest-populate-prefix\\src\\googletest-populate-stamp\\googletest-populate-gitclone-lastrun.txt":2: # No other meaning or use of this file is supported.
+"../../../..\\Work\\TietoEvry\\Program\\test\\test1.txt":0: My name is Roman Nawrot. 
+"../../../..\\Work\\TietoEvry\\Program\\test\\test1.txt":1: this is a test file
+"../../../..\\Work\\TietoEvry\\Program\\test\\test2.txt":1: My name is Walter Hartwell White. 
+"../../../..\\Work\\TietoEvry\\Program\\test\\test2.txt":3: This is my confession. 
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":26: Called 2 times, but only 1 WillOnce() is specified - returning default value.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":38:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":51:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":95:          Expected: the expectation is active
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":96:            Actual: it is retired
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":100:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":102:   Expected arg #1: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":116:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":137:   Expected arg #0: is equal to 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":177:            Actual: "Ho", which is located @0x#
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":178:   Expected arg #2: is >= 0
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":206:   Expected arg #0: is >= 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":223:   Expected arg #0: is equal to 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":225:   Expected arg #1: is equal to 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":238:   Expected arg #0: is equal to 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":240:   Expected arg #1: is equal to 2
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":284: Called 2 times, but only 1 WillOnce() is specified - taking default action specified at:
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":293: Expected: is pair (first: is >= 48, second: true)
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":313: FILE:#: ERROR: this mock object should be deleted but never is. Its address is @0x#.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":314: FILE:#: ERROR: this mock object should be deleted but never is. Its address is @0x#.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":315: FILE:#: ERROR: this mock object should be deleted but never is. Its address is @0x#.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\test\\gmock_output_test_golden.txt":316: ERROR: 3 leaked mock objects found at program exit. Expectations on a mock object are verified when the object is destructed. Leaking a mock means that its expectations aren't verified, which is usually a test bug. If you really intend to leak a mock, you can suppress this error using testing::Mock::AllowLeak(mock_object), or you may use a fake or stub instead of a mock.
+"../../../..\\Work\\aero_task\\build\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Work\\aero_task\\build\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Work\\aero_task\\build\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Work\\aero_task\\build\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Work\\aero_task\\build\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Work\\aero_task\\build\\CMakeCache.txt":243: //If this value is on, makefiles will be generated without the
+"../../../..\\Work\\aero_task\\build\\CMakeCache.txt":245: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Work\\aero_task\\build\\CMakeCache.txt":258: //This is the directory where this CMakeCache.txt was created
+"../../../..\\Warblade\\Warblade_game\\build\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Warblade\\Warblade_game\\build\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Warblade\\Warblade_game\\build\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Warblade\\Warblade_game\\build\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Warblade\\Warblade_game\\build\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Warblade\\Warblade_game\\build\\CMakeCache.txt":232: //If this value is on, makefiles will be generated without the
+"../../../..\\Warblade\\Warblade_game\\build\\CMakeCache.txt":234: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Warblade\\Warblade_game\\build\\CMakeCache.txt":256: //This is the directory where this CMakeCache.txt was created
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":1: # Note: CMake support is community-based. The maintainers do not use CMake
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":37: # Language "C" is required for find_package(Threads).
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":53: # These commands only run if this is the main project
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":55:   # BUILD_SHARED_LIBS is a standard CMake variable, but we declare it here to
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":72:   # This directory is needed to build directly from Google Test sources.
+"../../../..\\Coders_School\\STL\\stl\\homework\\grayscale-image\\build\\_deps\\googletest-src\\googlemock\\CMakeLists.txt":168:   # gmock_all_test is commented to save time building and running tests.
+"../../../..\\SFML\\tools\\xcode\\templates\\readme.txt":98:     5. set SFML_XXX variable, where XXX is the name of the module to add/remove, to
+"../../../..\\SFML\\examples\\cocoa\\readme.txt":3: This is a small example of the integration of SFML in a Cocoa application.
+"../../../..\\SFML\\doc\\CMakeLists.txt":23:     # if HHC is found, we can generate the CHM (compressed HTML) output
+"../../../..\\Game\\Build\\CMakeCache.txt":0: # This is the CMakeCache file.
+"../../../..\\Game\\Build\\CMakeCache.txt":6: # The syntax for the file is as follows:
+"../../../..\\Game\\Build\\CMakeCache.txt":8: # KEY is the name of a variable in the cache.
+"../../../..\\Game\\Build\\CMakeCache.txt":9: # TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.
+"../../../..\\Game\\Build\\CMakeCache.txt":10: # VALUE is the current value for the KEY.
+"../../../..\\Game\\Build\\CMakeCache.txt":234: //If this value is on, makefiles will be generated without the
+"../../../..\\Game\\Build\\CMakeCache.txt":236: // during the make.  This is useful for debugging only. With Visual
+"../../../..\\Game\\Build\\CMakeCache.txt":258: //This is the directory where this CMakeCache.txt was created

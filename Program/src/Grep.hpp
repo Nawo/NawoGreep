@@ -35,7 +35,7 @@ private:
     std::vector<FindedFiles> findedFiles;
 
     std::mutex queueMutex;
-    std::vector<std::pair<std::thread, std::thread::id>> threads;
+    std::vector<std::thread> threads;
     void processFilesInQueue();
 
     std::chrono::time_point<std::chrono::system_clock> startProgramTime;

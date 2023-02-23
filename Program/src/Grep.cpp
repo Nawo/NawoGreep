@@ -47,10 +47,8 @@ void Grep::searchFiles() {
                 foldersToSearch.pop_back();
                 for (const auto& entry : std::filesystem::directory_iterator(currentFolder)) {
                     if (entry.is_regular_file()) {
-                        std::cout << "ANY: " << entry << "\n";
                         searchedFiles++;
                         if (entry.path().extension() == ".txt") {
-                            std::cout << ".TXT: " << entry << "\n";
                             filesToParse.emplace_back(entry.path().string());
                         }
                     } else if (entry.is_directory()) {
@@ -86,7 +84,7 @@ void Grep::parseFiles() {
                 }
                 lineNumber++;
             }
-            findedFiles.back().setInFilePatternsNumber(inFilePatternsNumber);
+            // findedFiles.back().setInFilePatternsNumber(inFilePatternsNumber); PROBLEM PROBLEM PROBLEM !!!
             find = false;
             inFilePatternsNumber = 0;
             lineNumber = 0;
@@ -99,14 +97,11 @@ void Grep::parseFiles() {
 
 void Grep::processFilesInQueue() {
     for (int i = 0; i < numberOfThreads; i++) {
-        threads.push_back(std::make_pair(std::thread([&]() {
-                                             parseFiles();
-                                         }),
-                                         std::this_thread::get_id()));
+        threads.push_back(std::thread([&]() { parseFiles(); }));
     }
 
     for (auto& thread : threads) {
-        thread.first.join();
+        thread.join();
     }
 }
 
@@ -130,15 +125,40 @@ void Grep::saveToLogFile() {
     // 140035833542400:
     // 140035855147214:
     std::multimap<std::thread::id, std::string> toLogFile;
-    for (auto& thread : threads) {
-        for (const auto& file : findedFiles) {
-            toLogFile.emplace(thread.second, file.getFilePatch().path().filename().string());
-            // std::cout << thread.second << ": " << file.filePatch_.path().filename().string() << std::endl;
+    for (const auto& file : findedFiles) {
+        toLogFile.emplace(file.getThreadID(), file.getFilePatch().path().filename().string());
+    }
+
+    std::map<std::thread::id, int> threadFileCount;
+    for (auto& [threadId, fileName] : toLogFile) {
+        threadFileCount[threadId]++;
+    }
+
+    // Sortujemy wątki malejąco po liczbie plików
+    std::vector<std::pair<std::thread::id, int>> sortedThreads;
+    for (auto& [threadId, fileCount] : threadFileCount) {
+        sortedThreads.emplace_back(threadId, fileCount);
+    }
+    std::sort(sortedThreads.begin(), sortedThreads.end(), [](const auto& a, const auto& b) {
+        return a.second > b.second;
+    });
+
+    // Otwieramy plik do zapisu
+    std::ofstream outFile(logFile);
+
+    // Zapisujemy pliki dla każdego wątku w kolejności malejącej liczby plików
+    for (auto& [threadId, fileCount] : sortedThreads) {
+        outFile << threadId << ":";
+        for (auto& [tId, fileName] : toLogFile) {
+            if (tId == threadId) {
+                outFile << " " << fileName;
+            }
         }
+        outFile << std::endl;
     }
-    for (auto& a : toLogFile) {
-        std::cout << a.first << ": " << a.second << std::endl;
-    }
+
+    // Zamykamy plik
+    outFile.close();
 }
 
 void Grep::getEndTime() {

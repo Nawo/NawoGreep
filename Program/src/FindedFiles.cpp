@@ -10,7 +10,7 @@ std::filesystem::directory_entry FindedFiles::getFilePatch() const {
 int FindedFiles::getInFilePatternsNumber() const {
     return inFilePatternsNumber_;
 }
-std::thread::id FindedFiles::getThreadID() {
+std::thread::id FindedFiles::getThreadID() const {
     return threadID_;
 }
 

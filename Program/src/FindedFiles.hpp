@@ -16,7 +16,7 @@ struct FindedFiles {
     // GETTERS
     std::filesystem::directory_entry getFilePatch() const;
     int getInFilePatternsNumber() const;
-    std::thread::id getThreadID();
+    std::thread::id getThreadID() const;
 
     // SETTERS
     void setInFilePatternsNumber(const int& _InFilePatternsNumber);
