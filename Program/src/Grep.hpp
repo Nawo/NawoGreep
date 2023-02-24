@@ -35,6 +35,7 @@ private:
     std::vector<FindedFiles> findedFiles;
 
     std::mutex queueMutex;
+    std::mutex findedFilesMutex;
     std::vector<std::thread> threads;
     void processFilesInQueue();
 

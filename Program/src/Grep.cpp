@@ -45,17 +45,25 @@ void Grep::searchFiles() {
             while (!foldersToSearch.empty()) {
                 auto currentFolder = foldersToSearch.back();
                 foldersToSearch.pop_back();
-                for (const auto& entry : std::filesystem::directory_iterator(currentFolder)) {
-                    if (entry.is_regular_file()) {
-                        searchedFiles++;
-                        if (entry.path().extension() == ".txt") {
-                            filesToParse.emplace_back(entry.path().string());
+                try {
+                    for (const auto& entry : std::filesystem::directory_iterator(currentFolder)) {
+                        if (entry.is_regular_file()) {
+                            searchedFiles++;
+                            if (entry.path().extension() == ".txt") {
+                                filesToParse.emplace_back(entry.path().string());
+                            }
+                        } else if (entry.is_directory()) {
+                            foldersToSearch.emplace_back(entry.path());
                         }
-                    } else if (entry.is_directory()) {
-                        foldersToSearch.emplace_back(entry.path());
                     }
+                } catch (const std::filesystem::filesystem_error& ex) {
+                    std::cerr << "[NAWOGREP] Error: " << ex.what() << std::endl;
                 }
             }
+
+        } else {
+            std::cout << "[NAWOGREP] Direction " << startSearchDirection << " doesn't exist!";
+            exit(0);
         }
     }
 }
@@ -76,20 +84,27 @@ void Grep::parseFiles() {
                     if (find == false) {
                         filesWithPattern++;
                         find = true;
-                        findedFiles.emplace_back(filesToParse.back(), thisThreadId);
+                        {
+                            std::lock_guard<std::mutex> lock(findedFilesMutex);
+                            findedFiles.emplace_back(filesToParse.back(), thisThreadId);
+                        }
                     }
                     patternsNumber++;
                     inFilePatternsNumber++;
-                    findedFiles.back().lines.emplace_back(lineNumber, lineInFile);
+                    {
+                        std::lock_guard<std::mutex> lock(findedFilesMutex);
+                        findedFiles.back().lines.emplace_back(lineNumber, lineInFile);
+                    }
                 }
                 lineNumber++;
             }
-            // findedFiles.back().setInFilePatternsNumber(inFilePatternsNumber); PROBLEM PROBLEM PROBLEM !!!
-            find = false;
-            inFilePatternsNumber = 0;
-            lineNumber = 0;
+            if (!findedFiles.empty()) {
+                findedFiles.back().setInFilePatternsNumber(inFilePatternsNumber);
+                find = false;
+                inFilePatternsNumber = 0;
+                lineNumber = 0;
+            }
             filesToParse.pop_back();
-            filesToParse.shrink_to_fit();
         }
         queueMutex.unlock();
     }
@@ -118,12 +133,6 @@ void Grep::saveToResultFile() {
 }
 
 void Grep::saveToLogFile() {
-    // sorted from the thread id with the most files number and ending with the least, (here are only file names, not full paths to files).
-
-    // 140035841935104: file6, file 4
-    // 140035825149696: file2
-    // 140035833542400:
-    // 140035855147214:
     std::multimap<std::thread::id, std::string> toLogFile;
     for (const auto& file : findedFiles) {
         toLogFile.emplace(file.getThreadID(), file.getFilePatch().path().filename().string());
@@ -182,7 +191,6 @@ void Grep::run() {
     getStartTime();
     searchFiles();
     processFilesInQueue();
-    parseFiles();
     saveToResultFile();
     saveToLogFile();
     getEndTime();
