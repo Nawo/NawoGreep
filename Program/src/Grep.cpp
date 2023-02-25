@@ -74,38 +74,41 @@ void Grep::parseFiles() {
             queueMutex.unlock();
             break;
         }
-        while (!filesToParse.empty()) {
-            std::thread::id thisThreadId = std::this_thread::get_id();
-            std::ifstream file(filesToParse.back().path());
-            while (std::getline(file, lineInFile)) {
-                if (std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end()) != lineInFile.end()) {
-                    // TO DO sprawdzanie prefixow i sufixow patternie
-                    if (find == false) {
-                        filesWithPattern++;
-                        find = true;
-                        {
-                            std::lock_guard<std::mutex> lock(findedFilesMutex);
-                            findedFiles.emplace_back(filesToParse.back(), thisThreadId);
-                        }
-                    }
-                    patternsNumber++;
-                    inFilePatternsNumber++;
+        auto fileToParse = filesToParse.back();
+        filesToParse.pop_back();
+        queueMutex.unlock();
+
+        std::thread::id thisThreadId = std::this_thread::get_id();
+        std::ifstream file(fileToParse.path());
+
+        bool find = false;
+        int inFilePatternsNumber = 0;
+        int lineNumber = 0;
+
+        while (std::getline(file, lineInFile)) {
+            if (std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end()) != lineInFile.end()) {
+                // TO DO sprawdzanie prefixow i sufixow patternie
+                if (find == false) {
+                    filesWithPattern++;
+                    find = true;
                     {
                         std::lock_guard<std::mutex> lock(findedFilesMutex);
-                        findedFiles.back().lines.emplace_back(lineNumber, lineInFile);
+                        findedFiles.emplace_back(fileToParse, thisThreadId);
                     }
                 }
-                lineNumber++;
+                patternsNumber++;
+                inFilePatternsNumber++;
+                {
+                    std::lock_guard<std::mutex> lock(findedFilesMutex);
+                    findedFiles.back().lines.emplace_back(lineNumber, lineInFile);
+                }
             }
-            if (!findedFiles.empty()) {
-                findedFiles.back().setInFilePatternsNumber(inFilePatternsNumber);
-                find = false;
-                inFilePatternsNumber = 0;
-                lineNumber = 0;
-            }
-            filesToParse.pop_back();
+            lineNumber++;
         }
-        queueMutex.unlock();
+        if (find) {
+            std::lock_guard<std::mutex> lock(findedFilesMutex);
+            findedFiles.back().setInFilePatternsNumber(inFilePatternsNumber);
+        }
     }
 }
 
@@ -136,18 +139,15 @@ void Grep::saveToResultFile() {
 }
 
 void Grep::saveToLogFile() {
-    std::multimap<std::thread::id, std::string> toLogFile;
     for (const auto& file : findedFiles) {
         toLogFile.emplace(file.getThreadID(), file.getFilePatch().path().filename().string());
     }
 
-    std::map<std::thread::id, int> threadFileCount;
-    for (auto& [threadId, fileName] : toLogFile) {
+    for (const auto& [threadId, fileName] : toLogFile) {
         threadFileCount[threadId]++;
     }
 
-    std::vector<std::pair<std::thread::id, int>> sortedThreads;
-    for (auto& [threadId, fileCount] : threadFileCount) {
+    for (const auto& [threadId, fileCount] : threadFileCount) {
         sortedThreads.emplace_back(threadId, fileCount);
     }
 
@@ -157,9 +157,9 @@ void Grep::saveToLogFile() {
 
     std::ofstream outFile(logFile);
 
-    for (auto& [threadId, fileCount] : sortedThreads) {
+    for (const auto& [threadId, fileCount] : sortedThreads) {
         outFile << threadId << ":";
-        for (auto& [tId, fileName] : toLogFile) {
+        for (const auto& [tId, fileName] : toLogFile) {
             if (tId == threadId) {
                 outFile << " " << fileName;
             }

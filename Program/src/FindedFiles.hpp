@@ -5,11 +5,6 @@
 #include <thread>
 
 struct FindedFiles {
-    // VARIABLES
-    int inFilePatternsNumber;
-    std::filesystem::directory_entry filePatch;
-    std::thread::id threadID;
-
     // CONTAINERS
     std::vector<std::pair<int, std::string>> lines;
 
@@ -25,4 +20,10 @@ struct FindedFiles {
     FindedFiles() = delete;
     FindedFiles(const std::filesystem::directory_entry& filePatch_, const std::thread::id& threadID_);
     ~FindedFiles() = default;
+
+private:
+    // VARIABLES
+    int inFilePatternsNumber;
+    std::filesystem::directory_entry filePatch;
+    std::thread::id threadID;
 };
