@@ -1,19 +1,19 @@
 #include "FindedFiles.hpp"
 
-FindedFiles::FindedFiles(const std::filesystem::directory_entry& filePatch, const std::thread::id& threadID)
-    : filePatch_(filePatch),
-      threadID_(threadID){};
+FindedFiles::FindedFiles(const std::filesystem::directory_entry& filePatch_, const std::thread::id& threadID_)
+    : filePatch(filePatch_),
+      threadID(threadID_){};
 
 std::filesystem::directory_entry FindedFiles::getFilePatch() const {
-    return filePatch_;
+    return filePatch;
 }
 int FindedFiles::getInFilePatternsNumber() const {
-    return inFilePatternsNumber_;
+    return inFilePatternsNumber;
 }
 std::thread::id FindedFiles::getThreadID() const {
-    return threadID_;
+    return threadID;
 }
 
-void FindedFiles::setInFilePatternsNumber(const int& _InFilePatternsNumber) {
-    inFilePatternsNumber_ = _InFilePatternsNumber;
+void FindedFiles::setInFilePatternsNumber(const int& InFilePatternsNumber_) {
+    inFilePatternsNumber = InFilePatternsNumber_;
 }

@@ -57,12 +57,11 @@ void Grep::searchFiles() {
                         }
                     }
                 } catch (const std::filesystem::filesystem_error& ex) {
-                    std::cerr << "[NAWOGREP] Error: " << ex.what() << std::endl;
+                    std::cerr << "[NAWOGREP] " << ex.what() << std::endl;
                 }
             }
-
         } else {
-            std::cout << "[NAWOGREP] Direction " << startSearchDirection << " doesn't exist!";
+            std::cout << "[NAWOGREP] " << startSearchDirection << " is not direction!";
             exit(0);
         }
     }
@@ -121,12 +120,16 @@ void Grep::processFilesInQueue() {
 }
 
 void Grep::saveToResultFile() {
-    std::sort(findedFiles.begin(), findedFiles.end(), [](const auto& lhs, const auto& rhs) { return lhs.getInFilePatternsNumber() > rhs.getInFilePatternsNumber(); });
+    std::sort(findedFiles.begin(), findedFiles.end(),
+              [](const auto& lhs, const auto& rhs) { return lhs.getInFilePatternsNumber() > rhs.getInFilePatternsNumber(); });
     std::ofstream fileToWriteResuult(resultFile, std::ios::out | std::ios::trunc);
     if (fileToWriteResuult.is_open()) {
         for (const auto& file : findedFiles) {
             for (const auto& element : file.lines)
-                fileToWriteResuult << file.filePatch_ << ":" << element.first << ": " << element.second << std::endl;
+                fileToWriteResuult << file.getFilePatch()
+                                   << ":" << element.first
+                                   << ": " << element.second
+                                   << std::endl;
         }
         fileToWriteResuult.close();
     }
@@ -143,19 +146,17 @@ void Grep::saveToLogFile() {
         threadFileCount[threadId]++;
     }
 
-    // Sortujemy wątki malejąco po liczbie plików
     std::vector<std::pair<std::thread::id, int>> sortedThreads;
     for (auto& [threadId, fileCount] : threadFileCount) {
         sortedThreads.emplace_back(threadId, fileCount);
     }
+
     std::sort(sortedThreads.begin(), sortedThreads.end(), [](const auto& a, const auto& b) {
         return a.second > b.second;
     });
 
-    // Otwieramy plik do zapisu
     std::ofstream outFile(logFile);
 
-    // Zapisujemy pliki dla każdego wątku w kolejności malejącej liczby plików
     for (auto& [threadId, fileCount] : sortedThreads) {
         outFile << threadId << ":";
         for (auto& [tId, fileName] : toLogFile) {
@@ -165,8 +166,6 @@ void Grep::saveToLogFile() {
         }
         outFile << std::endl;
     }
-
-    // Zamykamy plik
     outFile.close();
 }
 
