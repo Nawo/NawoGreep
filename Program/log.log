@@ -1,10 +1,2 @@
-4: CMakeLists.txt CMakeLists.txt result.txt CMakeLists.txt CMakeLists.txt TargetDirectories.txt CMakeLists.txt link.txt Labels.txt CMakeLists.txt CMakeLists.txt CMakeLists.txt
-9: gmock_output_test_golden.txt TargetDirectories.txt CMakeLists.txt CMakeLists.txt CMakeLists.txt CMakeLists.txt CMakeLists.txt link.txt CMakeCache.txt CMakeLists.txt CMakeRuleHashes.txt
-11: TargetDirectories.txt CMakeCache.txt link.txt CMakeCache.txt CMakeLists.txt readme.txt CMakeLists.txt CMakeLists.txt CMakeLists.txt CMakeLists.txt
-3: gmock_output_test_golden.txt CMakeLists.txt CMakeLists.txt CMakeLists.txt CMakeLists.txt CMakeLists.txt CMakeLists.txt CMakeCache.txt
-2: CMakeCache.txt CMakeLists.txt CMakeCache.txt googletest-populate-gitclone-lastrun.txt TargetDirectories.txt CMakeCache.txt link.txt
-5: CMakeCache.txt gmock_output_test_golden.txt CMakeLists.txt CMakeCache.txt TargetDirectories.txt test2.txt
-8: CMakeCache.txt googletest-populate-gitinfo.txt TargetDirectories.txt CMakeCache.txt CMakeLists.txt googletest-output-test-golden-lin.txt
-6: CMakeCache.txt CMakeCache.txt CMakeLists.txt googletest-populate-gitinfo.txt CMakeLists.txt
-7: googletest-output-test-golden-lin.txt test3.txt install_manifest.txt CMakeLists.txt readme.txt
-10: CMakeLists.txt test1.txt CMakeLists.txt CMakeLists.txt googletest-output-test-golden-lin.txt
+2: test3.txt test1.txt
+3: test2.txt
