@@ -229,23 +229,12 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src
   C:/Program\ Files/MinGW/include/c++/11.2.0/ext/numeric_traits.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/cpp_type_traits.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/ext/type_traits.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/cstdlib \
-  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/stdlib.h \
-  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
-  C:/Program\ Files/MinGW/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h \
-  C:/Program\ Files/MinGW/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h \
-  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/limits.h \
-  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/stdlib.h \
-  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/malloc.h \
-  C:/Program\ Files/MinGW/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
-  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/errno.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/std_abs.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/filesystem \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/fs_fwd.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/condition_variable \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/std_mutex.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/system_error \
   C:/Program\ Files/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/cerrno \
+  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/errno.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/iosfwd \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stringfwd.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/memoryfwd.h \
@@ -253,6 +242,7 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src
   C:/Program\ Files/MinGW/include/c++/11.2.0/cwchar \
   C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
   C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/_mingw_stat64.h \
   C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
@@ -306,6 +296,9 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src
   C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/sys/types.h \
   C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/process.h \
   C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Program\ Files/MinGW/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h \
+  C:/Program\ Files/MinGW/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h \
+  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/limits.h \
   C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/signal.h \
   C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/pthread_signal.h \
   C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/pthread_compat.h \
@@ -318,12 +311,33 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/functional_hash.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/string_view.tcc \
   C:/Program\ Files/MinGW/include/c++/11.2.0/ext/string_conversions.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/cstdlib \
+  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/stdlib.h \
+  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/malloc.h \
+  C:/Program\ Files/MinGW/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/std_abs.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/cstdio \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/charconv.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/basic_string.tcc \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/fs_path.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/unique_lock.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/shared_ptr.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/shared_ptr_base.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/allocated_ptr.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/refwrap.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/invoke.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/unique_ptr.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/utility \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_relops.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/tuple \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/array \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/uses_allocator.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/ext/aligned_buffer.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/ext/concurrence.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/filesystem \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/fs_fwd.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/fs_path.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/locale \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/locale_classes.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/locale_classes.tcc \
@@ -343,11 +357,6 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/codecvt.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/locale_facets_nonio.tcc \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/locale_conv.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/unique_ptr.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/tuple \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/array \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/uses_allocator.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/invoke.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/iomanip \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/quoted_string.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/sstream \
@@ -360,12 +369,6 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/istream.tcc \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/sstream.tcc \
   C:/Program\ Files/MinGW/include/c++/11.2.0/codecvt \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/ext/concurrence.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/shared_ptr.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/shared_ptr_base.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/allocated_ptr.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/refwrap.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/ext/aligned_buffer.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/algorithm \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_algo.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/algorithmfwd.h \
@@ -399,13 +402,12 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_map.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_multimap.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/mutex \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/std_mutex.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/unique_lock.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/queue \
   C:/Program\ Files/MinGW/include/c++/11.2.0/deque \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_deque.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/deque.tcc \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_queue.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/shared_mutex \
   C:/Program\ Files/MinGW/include/c++/11.2.0/stack \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_stack.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/thread \
@@ -836,6 +838,8 @@ C:/Program\ Files/MinGW/include/c++/11.2.0/initializer_list:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/basic_string.h:
 
+C:/Program\ Files/MinGW/include/c++/11.2.0/shared_mutex:
+
 C:/Program\ Files/MinGW/include/c++/11.2.0/ext/atomicity.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/gthr.h:
@@ -1036,6 +1040,12 @@ C:/Program\ Files/MinGW/include/c++/11.2.0/bits/std_thread.h:
 
 D:/Projekty/Work/TietoEvry/Program/src/Grep.cpp:
 
+C:/Program\ Files/MinGW/include/c++/11.2.0/condition_variable:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_multimap.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/std_mutex.h:
+
 C:/Program\ Files/MinGW/include/c++/11.2.0/fstream:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/basic_file.h:
@@ -1049,10 +1059,6 @@ C:/Program\ Files/MinGW/include/c++/11.2.0/iostream:
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_tree.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_map.h:
-
-C:/Program\ Files/MinGW/include/c++/11.2.0/bits/std_mutex.h:
-
-C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_multimap.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/mutex:
 

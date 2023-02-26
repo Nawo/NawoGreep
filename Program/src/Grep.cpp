@@ -79,12 +79,12 @@ void Grep::parseFiles() {
         filesToParse.pop_back();
         queueMutex.unlock();
 
+        find = false;
+        lineNumber = 1;
+
         std::thread::id thisThreadId = std::this_thread::get_id();
         std::ifstream file(fileToParse.path());
-
-        bool find = false;
-        int inFilePatternsNumber = 0;
-        int lineNumber = 0;
+        std::string lineInFile;
 
         while (std::getline(file, lineInFile)) {
             if (std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end()) != lineInFile.end() ||

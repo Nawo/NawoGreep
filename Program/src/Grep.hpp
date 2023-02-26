@@ -28,14 +28,13 @@ private:
     std::string resultFile = "program.txt";
 
     // PARSE FILES VARIABLES
-    std::string lineInFile;
     int lineNumber = 1;
     int inFilePatternsNumber = 0;
     bool find = false;
 
     // CONTAINERS
-    std::vector<std::filesystem::directory_entry> filesToParse;
-    std::vector<FindedFiles> findedFiles;
+    std::deque<std::filesystem::directory_entry> filesToParse;
+    std::deque<FindedFiles> findedFiles;
 
     std::mutex queueMutex;
     std::mutex findedFilesMutex;
