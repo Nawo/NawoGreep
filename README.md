@@ -19,30 +19,30 @@ The program executed without obligatory parameter return information on console 
 
 When the program finished his work, it give following **output on console**:
 
-Searched files: <nr of files found in directory and subdirectories>
+Searched files: \<nr of files found in directory and subdirectories>\
 
-Files with pattern: <nr of files where the patten was found>
+Files with pattern: \<nr of files where the patten was found>\
 
-Patterns number: <Number of patterns found in all files>
+Patterns number: \<Number of patterns found in all files>\
 
-Result file: <path to result file>
+Result file: \<path to result file>\
 
-Log file: <path to log file>
+Log file: \<path to log file>\
 
-Used threads: <nr of threads>
+Used threads: \<nr of threads>\
 
-Elapsed time: <time elapsed from beginning to the end of the program>
+Elapsed time: \<time elapsed from beginning to the end of the program>\
 
 Program produces two files; **the result file** look as below:
 
-<file path>:<line number>: line content
+\<file path>\:\<line number>\: line content
 
-<file path>:<line number>: line content
+\<file path>\:\<line number>\: line content
 
 it contain list of all files (with line number and line content) where the pattern was found, sorted from the file where most patterns were found, and ending were least.
 
 **The log file** contain list of thread ids and file names which its processed, sorted from the thread id with the most files number and ending with the least, (here are only file names, not full paths to files).
 
-<thread id>:<file name>,<file name>, ...
+\<thread id>\:\<file name>\,\<file name>\, ...
 
-<thread id>:<file name>,<file name>, ...
+\<thread id>\:\<file name>\,\<file name>/, ...
