@@ -10,6 +10,7 @@ void Grep::parseArguments(const int& argc, char* argv[]) {
                   << "[NAWOGREP] Usage: <pattern> -d <start directory> -l <name of log file> -r <name of result file> -t <number of threads>" << std::endl;
         exit(0);
     }
+
     pattern = argv[1];
     pattern.insert(0, 1, ' ');
     pattern.push_back(' ');
