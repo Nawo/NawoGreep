@@ -11,8 +11,8 @@ Additional parameters:
 | Parameter           | Description                                                                | default value        |
 | :------------------ | :------------------------------------------------------------------------- | :------------------- |
 | -d or --dir         | start directory where program needs to look for files (also in subfolders) | current directory    |
-| -l or --log_file    | name of the log file                                                       | '<program name>'.log |
-| -r or --result_file | name of the file where result is given                                     | '<program name>'.txt |
+| -l or --log_file    | name of the log file                                                       | \<program name>\.log |
+| -r or --result_file | name of the file where result is given                                     | \<program name>\.txt |
 | -t or --threads     | number of threads in the pool                                              | 4                    |
 
 The program executed without obligatory parameter return information on console how to use it and stopped. The program use **threads pool** to process files.
