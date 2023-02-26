@@ -1,0 +1,3 @@
+"D:\Program Files (x86)\cmake-3.25.1-windows-x86_64\bin\cmake.exe" -E rm -f CMakeFiles\NawoGrep.dir/objects.a
+C:\PROGRA~1\MinGW\bin\ar.exe qc CMakeFiles\NawoGrep.dir/objects.a @CMakeFiles\NawoGrep.dir\objects1
+C:\PROGRA~1\MinGW\bin\G__~1.EXE -Wl,--whole-archive CMakeFiles\NawoGrep.dir/objects.a -Wl,--no-whole-archive -o NawoGrep.exe -Wl,--out-implib,libNawoGrep.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\NawoGrep.dir\linkLibs.rsp

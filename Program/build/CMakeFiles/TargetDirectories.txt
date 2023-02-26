@@ -1,0 +1,5 @@
+D:/Projekty/Work/TietoEvry/Program/build/CMakeFiles/edit_cache.dir
+D:/Projekty/Work/TietoEvry/Program/build/CMakeFiles/rebuild_cache.dir
+D:/Projekty/Work/TietoEvry/Program/build/src/CMakeFiles/NawoGrep.dir
+D:/Projekty/Work/TietoEvry/Program/build/src/CMakeFiles/edit_cache.dir
+D:/Projekty/Work/TietoEvry/Program/build/src/CMakeFiles/rebuild_cache.dir
