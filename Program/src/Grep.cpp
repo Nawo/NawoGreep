@@ -6,7 +6,7 @@ Grep::Grep(const int& argc, char* argv[]) {
 
 void Grep::parseArguments(const int& argc, char* argv[]) {
     if (argc < 2) {
-        std::cout << "[NAWOGREP] Too few arguments! " << std::endl
+        std::cerr << "[NAWOGREP] Too few arguments! " << std::endl
                   << "[NAWOGREP] Usage: <pattern> -d <start directory> -l <name of log file> -r <name of result file> -t <number of threads>" << std::endl;
         exit(0);
     }
@@ -26,7 +26,7 @@ void Grep::parseArguments(const int& argc, char* argv[]) {
         } else if (arg == "-t" || arg == "--threads") {
             numberOfThreads = std::stoi(argv[++i]);
         } else {
-            std::cout << "[NAWOGREP] Invalid argument: " << arg << std::endl
+            std::cerr << "[NAWOGREP] Invalid argument: " << arg << std::endl
                       << "[NAWOGREP] Usage: <pattern> -d <start directory> -l <name of log file> -r <name of result file> -t <number of threads>" << std::endl;
         }
     }
@@ -62,7 +62,7 @@ void Grep::searchFiles() {
                 }
             }
         } else {
-            std::cout << "[NAWOGREP] " << startSearchDirection << " is not direction!";
+            std::cerr << "[NAWOGREP] " << startSearchDirection << " is not direction!";
             exit(0);
         }
     }
@@ -99,11 +99,11 @@ void Grep::parseFiles() {
                         findedFiles.emplace_back(fileToParse, thisThreadId);
                     }
                 }
-                patternsNumber++;
-                inFilePatternsNumber++;
                 {
                     std::lock_guard<std::mutex> lock(findedFilesMutex);
                     findedFiles.back().lines.emplace_back(lineNumber, lineInFile);
+                    patternsNumber++;
+                    inFilePatternsNumber++;
                 }
             }
             lineNumber++;
