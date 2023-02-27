@@ -62,9 +62,12 @@ void Grep::searchFiles() {
                 }
             }
         } else {
-            std::cerr << "[NAWOGREP] " << startSearchDirection << " is not direction!";
+            std::cerr << "[NAWOGREP] argument " << startSearchDirection << " is not direction!";
             exit(0);
         }
+    } else {
+        std::cerr << "[NAWOGREP] direction " << startSearchDirection << " isn't exist!";
+        exit(0);
     }
 }
 
@@ -81,7 +84,7 @@ void Grep::parseFiles() {
 
         bool find = false;
         int inFilePatternsNumber = 0;
-        int lineNumber = 0;
+        int lineNumber = 1;
 
         std::thread::id thisThreadId = std::this_thread::get_id();
         std::ifstream file(fileToParse.path());
@@ -99,11 +102,11 @@ void Grep::parseFiles() {
                         findedFiles.emplace_back(fileToParse, thisThreadId);
                     }
                 }
+                patternsNumber++;
+                inFilePatternsNumber++;
                 {
                     std::lock_guard<std::mutex> lock(findedFilesMutex);
                     findedFiles.back().lines.emplace_back(lineNumber, lineInFile);
-                    patternsNumber++;
-                    inFilePatternsNumber++;
                 }
             }
             lineNumber++;
@@ -128,7 +131,7 @@ void Grep::processFilesInQueue() {
 void Grep::saveToResultFile() {
     std::sort(findedFiles.begin(), findedFiles.end(),
               [](const auto& lhs, const auto& rhs) { return lhs.getInFilePatternsNumber() > rhs.getInFilePatternsNumber(); });
-    std::ofstream fileToWriteResuult(resultFile, std::ios::out | std::ios::trunc);
+    std::ofstream fileToWriteResuult(resultFile + ".txt", std::ios::out | std::ios::trunc);
     if (fileToWriteResuult.is_open()) {
         for (const auto& file : findedFiles) {
             for (const auto& element : file.lines)
@@ -158,7 +161,7 @@ void Grep::saveToLogFile() {
         return a.second > b.second;
     });
 
-    std::ofstream outFile(logFile);
+    std::ofstream outFile(logFile + ".log");
 
     for (const auto& [threadId, fileCount] : sortedThreads) {
         outFile << threadId << ":";

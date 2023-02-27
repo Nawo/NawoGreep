@@ -24,8 +24,8 @@ private:
 
     std::string pattern;
     std::string startSearchDirection = ".";
-    std::string logFile = "program.log";
-    std::string resultFile = "program.txt";
+    std::string logFile = "NawoGrep";
+    std::string resultFile = "NawoGrep";
 
     // PARSE FILES VARIABLES
     int lineNumber = 1;
