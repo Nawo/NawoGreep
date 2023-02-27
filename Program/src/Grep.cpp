@@ -92,8 +92,8 @@ void Grep::parseFiles() {
 
         while (std::getline(file, lineInFile)) {
             if (std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end()) != lineInFile.end() ||
-                (std::equal(lineInFile.begin(), lineInFile.begin() + (pattern.size() - 2), pattern.begin() + 1, pattern.end() - 1)) ||
-                (std::equal(lineInFile.rbegin(), lineInFile.rbegin() + (pattern.size() - 2), pattern.rbegin() + 1, pattern.rend() - 1))) {
+                (std::equal(lineInFile.begin(), lineInFile.begin() + (pattern.size() - 2), pattern.begin() + 1, pattern.end())) ||
+                (std::equal(lineInFile.rbegin(), lineInFile.rbegin() + (pattern.size() - 2), pattern.rbegin(), pattern.rend() - 1))) {
                 if (find == false) {
                     filesWithPattern++;
                     find = true;

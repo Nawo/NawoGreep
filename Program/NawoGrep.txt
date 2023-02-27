@@ -1,14 +1,4 @@
-"../test\\test3.txt":1: Somebody once told me the world is gonna roll me
-"../test\\test3.txt":15: And all that glitters is gold
-"../test\\test3.txt":21: The ice we skate is getting pretty thin
-"../test\\test3.txt":27: All that glitters is gold
-"../test\\test3.txt":31: And all that glitters is gold
-"../test\\test3.txt":48: And all that glitters is gold
-"../test\\test3.txt":50: And all that glitters is gold
-"../test\\test1.txt":1: My name is Roman Nawrot. 
-"../test\\test1.txt":2: is this a test file
-"../test\\test1.txt":6: is i don't tknow
-"../test\\test1.txt":8: so i skip this topic is
-"../test\\test1.txt":10: a a a lalalal a is
-"../test\\test2.txt":2: My name is Walter Hartwell White. 
-"../test\\test2.txt":4: This is my confession. 
+"C://Users\\Roman\\AppData\\Roaming\\Microsoft\\Windows\\PowerShell\\PSReadLine\\ConsoleHost_history.txt":2056: .\src\NawoGrep.exe pies -l ../NawoGrep -r ../NawoGrep -d ../test -t 1
+"C://Users\\Roman\\AppData\\Roaming\\Microsoft\\Windows\\PowerShell\\PSReadLine\\ConsoleHost_history.txt":2057: .\src\NawoGrep.exe pies -l ../NawoGrep -r ../NawoGrep -d C::// -t 1
+"C://Users\\Roman\\AppData\\Roaming\\Microsoft\\Windows\\PowerShell\\PSReadLine\\ConsoleHost_history.txt":2058: .\src\NawoGrep.exe pies -l ../NawoGrep -r ../NawoGrep -d C:// -t 1
+"C://Users\\Roman\\AppData\\Roaming\\Microsoft\\Windows\\PowerShell\\PSReadLine\\ConsoleHost_history.txt":2061: .\src\NawoGrep.exe pies -l ../NawoGrep -r ../NawoGrep -d C:// -t 1
