@@ -183,8 +183,8 @@ void Grep::printVariables() {
     std::cout << "Searched files: " << searchedFiles << std::endl
               << "Files with pattern: " << filesWithPattern << std::endl
               << "Patterns number: " << patternsNumber << std::endl
-              << "Result file: " << resultFile << std::endl
-              << "Log file: " << logFile << std::endl
+              << "Result file: " << resultFile << ".txt" << std::endl
+              << "Log file: " << logFile << ".log" << std::endl
               << "Used threads: " << numberOfThreads << std::endl
               << "Elapsed time: "
               << std::chrono::duration_cast<std::chrono::milliseconds>(endProgramTime - startProgramTime).count()
