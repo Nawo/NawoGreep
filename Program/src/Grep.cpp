@@ -79,8 +79,9 @@ void Grep::parseFiles() {
         filesToParse.pop_back();
         queueMutex.unlock();
 
-        find = false;
-        lineNumber = 1;
+        bool find = false;
+        int inFilePatternsNumber = 0;
+        int lineNumber = 0;
 
         std::thread::id thisThreadId = std::this_thread::get_id();
         std::ifstream file(fileToParse.path());
