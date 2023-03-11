@@ -90,6 +90,8 @@ void Grep::parseFiles() {
         std::ifstream file(fileToParse.path());
         std::string lineInFile;
 
+        FindedFiles* findedFiles_iterator;
+
         while (std::getline(file, lineInFile)) {
             if (std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end()) != lineInFile.end() ||
                 (std::equal(lineInFile.begin(), lineInFile.begin() + (pattern.size() - 1), pattern.begin() + 1, pattern.end())) ||
@@ -97,23 +99,22 @@ void Grep::parseFiles() {
                 if (find == false) {
                     filesWithPattern++;
                     find = true;
-                    {
-                        std::lock_guard<std::mutex> lock(findedFilesMutex);
-                        findedFiles.emplace_back(fileToParse, thisThreadId);
-                    }
+                    findedFilesMutex.lock();
+                    findedFiles_iterator = &findedFiles.emplace_back(fileToParse, thisThreadId);
+                    findedFilesMutex.unlock();
                 }
                 patternsNumber++;
                 inFilePatternsNumber++;
-                {
-                    std::lock_guard<std::mutex> lock(findedFilesMutex);
-                    findedFiles.back().lines.emplace_back(lineNumber, lineInFile);
-                }
+                findedFilesMutex.lock();
+                findedFiles_iterator->lines.emplace_back(lineNumber, lineInFile);
+                findedFilesMutex.unlock();
             }
             lineNumber++;
         }
         if (find) {
-            std::lock_guard<std::mutex> lock(findedFilesMutex);
-            findedFiles.back().setInFilePatternsNumber(inFilePatternsNumber);
+            findedFilesMutex.lock();
+            findedFiles_iterator->setInFilePatternsNumber(inFilePatternsNumber);
+            findedFilesMutex.unlock();
         }
     }
 }
