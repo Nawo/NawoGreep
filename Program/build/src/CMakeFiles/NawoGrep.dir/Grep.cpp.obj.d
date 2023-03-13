@@ -208,8 +208,36 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: \
  c:\progra~1\mingw\include\c++\11.2.0\bits\stl_deque.h \
  c:\progra~1\mingw\include\c++\11.2.0\bits\deque.tcc \
  c:\progra~1\mingw\include\c++\11.2.0\bits\stl_queue.h \
+ c:\progra~1\mingw\include\c++\11.2.0\regex \
+ c:\progra~1\mingw\include\c++\11.2.0\bitset \
+ c:\progra~1\mingw\include\c++\11.2.0\iterator \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\stream_iterator.h \
+ c:\progra~1\mingw\include\c++\11.2.0\memory \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\stl_raw_storage_iter.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\align.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bit \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\shared_ptr_atomic.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\atomic_base.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\atomic_lockfree_defines.h \
+ c:\progra~1\mingw\include\c++\11.2.0\backward\auto_ptr.h \
+ c:\progra~1\mingw\include\c++\11.2.0\pstl\glue_memory_defs.h \
  c:\progra~1\mingw\include\c++\11.2.0\stack \
  c:\progra~1\mingw\include\c++\11.2.0\bits\stl_stack.h \
+ c:\progra~1\mingw\include\c++\11.2.0\cstring \
+ c:\progra~1\mingw\x86_64-w64-mingw32\include\string.h \
+ c:\progra~1\mingw\x86_64-w64-mingw32\include\sec_api\string_s.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\regex_constants.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\regex_error.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\regex_automaton.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\regex_automaton.tcc \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\regex_scanner.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\regex_scanner.tcc \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\regex_compiler.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\regex_compiler.tcc \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\regex.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\regex.tcc \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\regex_executor.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\regex_executor.tcc \
  c:\progra~1\mingw\include\c++\11.2.0\thread \
  c:\progra~1\mingw\include\c++\11.2.0\bits\std_thread.h \
  c:\progra~1\mingw\include\c++\11.2.0\bits\this_thread_sleep.h \

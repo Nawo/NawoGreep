@@ -406,8 +406,36 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_deque.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/deque.tcc \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_queue.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/regex \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bitset \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/iterator \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stream_iterator.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/memory \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/align.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bit \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/shared_ptr_atomic.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_base.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/backward/auto_ptr.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/pstl/glue_memory_defs.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/stack \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_stack.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/cstring \
+  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/string.h \
+  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_constants.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_error.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_automaton.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_automaton.tcc \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_scanner.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_scanner.tcc \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_compiler.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_compiler.tcc \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex.tcc \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_executor.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_executor.tcc \
   C:/Program\ Files/MinGW/include/c++/11.2.0/thread \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/std_thread.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/this_thread_sleep.h \
@@ -622,8 +650,36 @@ src/CMakeFiles/NawoGrep.dir/main.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_deque.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/deque.tcc \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_queue.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/regex \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bitset \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/iterator \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stream_iterator.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/memory \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/align.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bit \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/shared_ptr_atomic.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_base.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/backward/auto_ptr.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/pstl/glue_memory_defs.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/stack \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_stack.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/cstring \
+  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/string.h \
+  C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_constants.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_error.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_automaton.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_automaton.tcc \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_scanner.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_scanner.tcc \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_compiler.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_compiler.tcc \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex.tcc \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_executor.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_executor.tcc \
   C:/Program\ Files/MinGW/include/c++/11.2.0/thread \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/std_thread.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/this_thread_sleep.h \
@@ -662,6 +718,8 @@ C:/Program\ Files/MinGW/include/c++/11.2.0/pstl/pstl_config.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/postypes.h:
 
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_constants.h:
+
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/unordered_map.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/ctime:
@@ -698,6 +756,8 @@ C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/_mingw.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/iosfwd:
 
+C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/string.h:
+
 C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h:
 
 C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h:
@@ -711,6 +771,8 @@ C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stringfwd.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/memoryfwd.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_executor.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/predefined_ops.h:
 
@@ -756,6 +818,8 @@ C:/Program\ Files/MinGW/include/c++/11.2.0/bits/cxxabi_init_exception.h:
 
 C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/stddef.h:
 
+C:/Program\ Files/MinGW/include/c++/11.2.0/bit:
+
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_iterator.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/debug/assertions.h:
@@ -763,6 +827,8 @@ C:/Program\ Files/MinGW/include/c++/11.2.0/debug/assertions.h:
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/hash_bytes.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/new:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_compiler.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/move.h:
 
@@ -789,6 +855,8 @@ C:/Program\ Files/MinGW/include/c++/11.2.0/ext/numeric_traits.h:
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/shared_ptr_base.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_iterator_base_funcs.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_automaton.tcc:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/debug/debug.h:
 
@@ -833,6 +901,8 @@ C:/Program\ Files/MinGW/include/c++/11.2.0/bits/cxxabi_forced.h:
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_function.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/initializer_list:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_scanner.tcc:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/basic_string.h:
 
@@ -893,6 +963,8 @@ C:/Program\ Files/MinGW/include/c++/11.2.0/bits/locale_conv.h:
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/string_view.tcc:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/ext/string_conversions.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_lockfree_defines.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/cstdlib:
 
@@ -1008,6 +1080,8 @@ C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_heap.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_tempbuf.h:
 
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex.tcc:
+
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/uniform_int_dist.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/pstl/glue_algorithm_defs.h:
@@ -1058,8 +1132,46 @@ C:/Program\ Files/MinGW/include/c++/11.2.0/mutex:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_queue.h:
 
+C:/Program\ Files/MinGW/include/c++/11.2.0/regex:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bitset:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/iterator:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stream_iterator.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_scanner.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/memory:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_raw_storage_iter.h:
+
 C:/Program\ Files/MinGW/include/c++/11.2.0/stack:
 
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/align.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/shared_ptr_atomic.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_base.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/backward/auto_ptr.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/pstl/glue_memory_defs.h:
+
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_stack.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/cstring:
+
+C:/Program\ Files/MinGW/x86_64-w64-mingw32/include/sec_api/string_s.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_error.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_automaton.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_compiler.tcc:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_executor.tcc:
 
 D:/Projekty/Work/TietoEvry/Program/src/main.cpp:

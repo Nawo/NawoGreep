@@ -8,6 +8,7 @@
 #include <map>
 #include <mutex>
 #include <queue>
+#include <regex>
 #include <stack>
 #include <string>
 #include <thread>
@@ -33,8 +34,8 @@ private:
     bool find = false;
 
     // CONTAINERS
-    std::deque<std::filesystem::directory_entry> filesToParse;
-    std::deque<FindedFiles> findedFiles;
+    std::deque<std::filesystem::directory_entry*> filesToParse;
+    std::deque<FindedFiles*> findedFiles;
 
     std::mutex queueMutex;
     std::mutex findedFilesMutex;
