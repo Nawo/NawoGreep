@@ -12,8 +12,8 @@ void Grep::parseArguments(const int& argc, char* argv[]) {
     }
 
     pattern = argv[1];
-    pattern.insert(0, 1, ' ');
-    pattern.push_back(' ');
+    // pattern.insert(0, 1, ' ');
+    // pattern.push_back(' ');
 
     for (int i = 2; i < argc; i++) {
         std::string arg = argv[i];
@@ -71,6 +71,19 @@ void Grep::searchFiles() {
     }
 }
 
+int Grep::checkPattern(const std::string lineInFile) {
+    int count = 0;
+    auto it = std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end());
+    while (it != lineInFile.end()) {
+        if ((std::find(chars.begin(), chars.end(), *(it - 1)) != chars.end() || it == lineInFile.begin()) &&
+            (std::find(chars.begin(), chars.end(), *(it + pattern.size())) != chars.end() || (it + pattern.size()) == (lineInFile.end()))) {
+            count++;
+        }
+        it = std::search(it + pattern.size(), lineInFile.end(), pattern.begin(), pattern.end());
+    }
+    return count;
+}
+
 void Grep::parseFiles() {
     while (true) {
         queueMutex.lock();
@@ -93,9 +106,11 @@ void Grep::parseFiles() {
         std::string lineInFile;
 
         while (std::getline(file, lineInFile)) {
-            if (std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end()) != lineInFile.end() ||
-                (std::equal(lineInFile.begin(), lineInFile.begin() + (pattern.size() - 1), pattern.begin() + 1, pattern.end())) ||
-                (std::equal(lineInFile.rbegin(), lineInFile.rbegin() + (pattern.size() - 1), pattern.rbegin() + 1, pattern.rend()))) {
+            // if (std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end()) != lineInFile.end() ||
+            //     (std::equal(lineInFile.begin(), lineInFile.begin() + (pattern.size() - 1), pattern.begin() + 1, pattern.end())) ||
+            //     (std::equal(lineInFile.rbegin(), lineInFile.rbegin() + (pattern.size() - 1), pattern.rbegin() + 1, pattern.rend()))) {
+            auto countPatternsInLine = checkPattern(lineInFile);
+            if (countPatternsInLine) {
                 if (find == false) {
                     find = true;
                     filesWithPattern++;
@@ -104,8 +119,10 @@ void Grep::parseFiles() {
                     findedFilesMutex.unlock();
                 }
                 findedFiles_iterator->lines.emplace_back(lineNumber, lineInFile);
-                patternsNumber++;
-                inFilePatternsNumber++;
+                // patternsNumber++;
+                // inFilePatternsNumber++;
+                patternsNumber += countPatternsInLine;
+                inFilePatternsNumber += countPatternsInLine;
             }
             lineNumber++;
         }

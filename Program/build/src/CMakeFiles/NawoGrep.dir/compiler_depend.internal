@@ -201,13 +201,34 @@ src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj
 src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj
  D:/Projekty/Work/TietoEvry/Program/src/Grep.cpp
  D:/Projekty/Work/TietoEvry/Program/src/Grep.hpp
- C:/Program Files/MinGW/include/c++/11.2.0/chrono
- C:/Program Files/MinGW/include/c++/11.2.0/ratio
- C:/Program Files/MinGW/include/c++/11.2.0/type_traits
+ C:/Program Files/MinGW/include/c++/11.2.0/array
+ C:/Program Files/MinGW/include/c++/11.2.0/utility
  C:/Program Files/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++config.h
  C:/Program Files/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/os_defines.h
  C:/Program Files/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/cpu_defines.h
  C:/Program Files/MinGW/include/c++/11.2.0/pstl/pstl_config.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_relops.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_pair.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/move.h
+ C:/Program Files/MinGW/include/c++/11.2.0/type_traits
+ C:/Program Files/MinGW/include/c++/11.2.0/initializer_list
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/functexcept.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/exception_defines.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_algobase.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/cpp_type_traits.h
+ C:/Program Files/MinGW/include/c++/11.2.0/ext/type_traits.h
+ C:/Program Files/MinGW/include/c++/11.2.0/ext/numeric_traits.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_iterator_base_types.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_iterator_base_funcs.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/concept_check.h
+ C:/Program Files/MinGW/include/c++/11.2.0/debug/assertions.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_iterator.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/ptr_traits.h
+ C:/Program Files/MinGW/include/c++/11.2.0/debug/debug.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/predefined_ops.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/range_access.h
+ C:/Program Files/MinGW/include/c++/11.2.0/chrono
+ C:/Program Files/MinGW/include/c++/11.2.0/ratio
  C:/Program Files/MinGW/include/c++/11.2.0/cstdint
  C:/Program Files/MinGW/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h
  C:/Program Files/MinGW/x86_64-w64-mingw32/include/stdint.h
@@ -228,9 +249,6 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj
  C:/Program Files/MinGW/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h
  C:/Program Files/MinGW/x86_64-w64-mingw32/include/pthread_time.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/parse_numbers.h
- C:/Program Files/MinGW/include/c++/11.2.0/ext/numeric_traits.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/cpp_type_traits.h
- C:/Program Files/MinGW/include/c++/11.2.0/ext/type_traits.h
  C:/Program Files/MinGW/include/c++/11.2.0/cstdlib
  C:/Program Files/MinGW/x86_64-w64-mingw32/include/stdlib.h
  C:/Program Files/MinGW/x86_64-w64-mingw32/include/corecrt_wstdlib.h
@@ -263,26 +281,13 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj
  C:/Program Files/MinGW/include/c++/11.2.0/exception
  C:/Program Files/MinGW/include/c++/11.2.0/bits/exception.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/exception_ptr.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/exception_defines.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/cxxabi_init_exception.h
  C:/Program Files/MinGW/include/c++/11.2.0/typeinfo
  C:/Program Files/MinGW/include/c++/11.2.0/bits/hash_bytes.h
  C:/Program Files/MinGW/include/c++/11.2.0/new
  C:/Program Files/MinGW/include/c++/11.2.0/bits/nested_exception.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/move.h
  C:/Program Files/MinGW/include/c++/11.2.0/string
  C:/Program Files/MinGW/include/c++/11.2.0/bits/char_traits.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_algobase.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/functexcept.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_pair.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_iterator_base_types.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_iterator_base_funcs.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/concept_check.h
- C:/Program Files/MinGW/include/c++/11.2.0/debug/assertions.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_iterator.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/ptr_traits.h
- C:/Program Files/MinGW/include/c++/11.2.0/debug/debug.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/predefined_ops.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/allocator.h
  C:/Program Files/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++allocator.h
  C:/Program Files/MinGW/include/c++/11.2.0/ext/new_allocator.h
@@ -298,8 +303,6 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj
  C:/Program Files/MinGW/include/c++/11.2.0/bits/cxxabi_forced.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_function.h
  C:/Program Files/MinGW/include/c++/11.2.0/backward/binders.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/range_access.h
- C:/Program Files/MinGW/include/c++/11.2.0/initializer_list
  C:/Program Files/MinGW/include/c++/11.2.0/bits/basic_string.h
  C:/Program Files/MinGW/include/c++/11.2.0/ext/atomicity.h
  C:/Program Files/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/gthr.h
@@ -324,8 +327,6 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj
  C:/Program Files/MinGW/include/c++/11.2.0/bits/charconv.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/basic_string.tcc
  C:/Program Files/MinGW/include/c++/11.2.0/bits/fs_path.h
- C:/Program Files/MinGW/include/c++/11.2.0/utility
- C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_relops.h
  C:/Program Files/MinGW/include/c++/11.2.0/locale
  C:/Program Files/MinGW/include/c++/11.2.0/bits/locale_classes.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/locale_classes.tcc
@@ -347,7 +348,6 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj
  C:/Program Files/MinGW/include/c++/11.2.0/bits/locale_conv.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/unique_ptr.h
  C:/Program Files/MinGW/include/c++/11.2.0/tuple
- C:/Program Files/MinGW/include/c++/11.2.0/array
  C:/Program Files/MinGW/include/c++/11.2.0/bits/uses_allocator.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/invoke.h
  C:/Program Files/MinGW/include/c++/11.2.0/iomanip
@@ -446,13 +446,34 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj
 src/CMakeFiles/NawoGrep.dir/main.cpp.obj
  D:/Projekty/Work/TietoEvry/Program/src/main.cpp
  D:/Projekty/Work/TietoEvry/Program/src/Grep.hpp
- C:/Program Files/MinGW/include/c++/11.2.0/chrono
- C:/Program Files/MinGW/include/c++/11.2.0/ratio
- C:/Program Files/MinGW/include/c++/11.2.0/type_traits
+ C:/Program Files/MinGW/include/c++/11.2.0/array
+ C:/Program Files/MinGW/include/c++/11.2.0/utility
  C:/Program Files/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++config.h
  C:/Program Files/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/os_defines.h
  C:/Program Files/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/cpu_defines.h
  C:/Program Files/MinGW/include/c++/11.2.0/pstl/pstl_config.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_relops.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_pair.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/move.h
+ C:/Program Files/MinGW/include/c++/11.2.0/type_traits
+ C:/Program Files/MinGW/include/c++/11.2.0/initializer_list
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/functexcept.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/exception_defines.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_algobase.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/cpp_type_traits.h
+ C:/Program Files/MinGW/include/c++/11.2.0/ext/type_traits.h
+ C:/Program Files/MinGW/include/c++/11.2.0/ext/numeric_traits.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_iterator_base_types.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_iterator_base_funcs.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/concept_check.h
+ C:/Program Files/MinGW/include/c++/11.2.0/debug/assertions.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_iterator.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/ptr_traits.h
+ C:/Program Files/MinGW/include/c++/11.2.0/debug/debug.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/predefined_ops.h
+ C:/Program Files/MinGW/include/c++/11.2.0/bits/range_access.h
+ C:/Program Files/MinGW/include/c++/11.2.0/chrono
+ C:/Program Files/MinGW/include/c++/11.2.0/ratio
  C:/Program Files/MinGW/include/c++/11.2.0/cstdint
  C:/Program Files/MinGW/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h
  C:/Program Files/MinGW/x86_64-w64-mingw32/include/stdint.h
@@ -473,9 +494,6 @@ src/CMakeFiles/NawoGrep.dir/main.cpp.obj
  C:/Program Files/MinGW/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h
  C:/Program Files/MinGW/x86_64-w64-mingw32/include/pthread_time.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/parse_numbers.h
- C:/Program Files/MinGW/include/c++/11.2.0/ext/numeric_traits.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/cpp_type_traits.h
- C:/Program Files/MinGW/include/c++/11.2.0/ext/type_traits.h
  C:/Program Files/MinGW/include/c++/11.2.0/cstdlib
  C:/Program Files/MinGW/x86_64-w64-mingw32/include/stdlib.h
  C:/Program Files/MinGW/x86_64-w64-mingw32/include/corecrt_wstdlib.h
@@ -508,26 +526,13 @@ src/CMakeFiles/NawoGrep.dir/main.cpp.obj
  C:/Program Files/MinGW/include/c++/11.2.0/exception
  C:/Program Files/MinGW/include/c++/11.2.0/bits/exception.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/exception_ptr.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/exception_defines.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/cxxabi_init_exception.h
  C:/Program Files/MinGW/include/c++/11.2.0/typeinfo
  C:/Program Files/MinGW/include/c++/11.2.0/bits/hash_bytes.h
  C:/Program Files/MinGW/include/c++/11.2.0/new
  C:/Program Files/MinGW/include/c++/11.2.0/bits/nested_exception.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/move.h
  C:/Program Files/MinGW/include/c++/11.2.0/string
  C:/Program Files/MinGW/include/c++/11.2.0/bits/char_traits.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_algobase.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/functexcept.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_pair.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_iterator_base_types.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_iterator_base_funcs.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/concept_check.h
- C:/Program Files/MinGW/include/c++/11.2.0/debug/assertions.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_iterator.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/ptr_traits.h
- C:/Program Files/MinGW/include/c++/11.2.0/debug/debug.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/predefined_ops.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/allocator.h
  C:/Program Files/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++allocator.h
  C:/Program Files/MinGW/include/c++/11.2.0/ext/new_allocator.h
@@ -543,8 +548,6 @@ src/CMakeFiles/NawoGrep.dir/main.cpp.obj
  C:/Program Files/MinGW/include/c++/11.2.0/bits/cxxabi_forced.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_function.h
  C:/Program Files/MinGW/include/c++/11.2.0/backward/binders.h
- C:/Program Files/MinGW/include/c++/11.2.0/bits/range_access.h
- C:/Program Files/MinGW/include/c++/11.2.0/initializer_list
  C:/Program Files/MinGW/include/c++/11.2.0/bits/basic_string.h
  C:/Program Files/MinGW/include/c++/11.2.0/ext/atomicity.h
  C:/Program Files/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/gthr.h
@@ -569,8 +572,6 @@ src/CMakeFiles/NawoGrep.dir/main.cpp.obj
  C:/Program Files/MinGW/include/c++/11.2.0/bits/charconv.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/basic_string.tcc
  C:/Program Files/MinGW/include/c++/11.2.0/bits/fs_path.h
- C:/Program Files/MinGW/include/c++/11.2.0/utility
- C:/Program Files/MinGW/include/c++/11.2.0/bits/stl_relops.h
  C:/Program Files/MinGW/include/c++/11.2.0/locale
  C:/Program Files/MinGW/include/c++/11.2.0/bits/locale_classes.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/locale_classes.tcc
@@ -592,7 +593,6 @@ src/CMakeFiles/NawoGrep.dir/main.cpp.obj
  C:/Program Files/MinGW/include/c++/11.2.0/bits/locale_conv.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/unique_ptr.h
  C:/Program Files/MinGW/include/c++/11.2.0/tuple
- C:/Program Files/MinGW/include/c++/11.2.0/array
  C:/Program Files/MinGW/include/c++/11.2.0/bits/uses_allocator.h
  C:/Program Files/MinGW/include/c++/11.2.0/bits/invoke.h
  C:/Program Files/MinGW/include/c++/11.2.0/iomanip

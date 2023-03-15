@@ -1,5 +1,6 @@
 #pragma once
 
+#include <array>
 #include <chrono>
 #include <cstdlib>
 #include <filesystem>
@@ -34,6 +35,8 @@ private:
     bool find = false;
 
     // CONTAINERS
+    std::array<char, 6> chars{',', '.', ' ', ':', '!', '?'};
+
     std::deque<std::filesystem::directory_entry*> filesToParse;
     std::deque<FindedFiles*> findedFiles;
 
@@ -50,6 +53,7 @@ private:
     std::chrono::time_point<std::chrono::system_clock> endProgramTime;
 
     // FUNCTIONS
+    int checkPattern(const std::string lineInFile);
     void parseArguments(const int& argc, char* argv[]);
     void getStartTime();
     void searchFiles();

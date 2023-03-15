@@ -1,13 +1,34 @@
 src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: \
  D:\Projekty\Work\TietoEvry\Program\src\Grep.cpp \
  D:\Projekty\Work\TietoEvry\Program\src\Grep.hpp \
- c:\progra~1\mingw\include\c++\11.2.0\chrono \
- c:\progra~1\mingw\include\c++\11.2.0\ratio \
- c:\progra~1\mingw\include\c++\11.2.0\type_traits \
+ c:\progra~1\mingw\include\c++\11.2.0\array \
+ c:\progra~1\mingw\include\c++\11.2.0\utility \
  c:\progra~1\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\c++config.h \
  c:\progra~1\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\os_defines.h \
  c:\progra~1\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\cpu_defines.h \
  c:\progra~1\mingw\include\c++\11.2.0\pstl\pstl_config.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\stl_relops.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\stl_pair.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\move.h \
+ c:\progra~1\mingw\include\c++\11.2.0\type_traits \
+ c:\progra~1\mingw\include\c++\11.2.0\initializer_list \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\functexcept.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\exception_defines.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\stl_algobase.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\cpp_type_traits.h \
+ c:\progra~1\mingw\include\c++\11.2.0\ext\type_traits.h \
+ c:\progra~1\mingw\include\c++\11.2.0\ext\numeric_traits.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\stl_iterator_base_types.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\stl_iterator_base_funcs.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\concept_check.h \
+ c:\progra~1\mingw\include\c++\11.2.0\debug\assertions.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\stl_iterator.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\ptr_traits.h \
+ c:\progra~1\mingw\include\c++\11.2.0\debug\debug.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\predefined_ops.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\range_access.h \
+ c:\progra~1\mingw\include\c++\11.2.0\chrono \
+ c:\progra~1\mingw\include\c++\11.2.0\ratio \
  c:\progra~1\mingw\include\c++\11.2.0\cstdint \
  c:\progra~1\mingw\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h \
  c:\progra~1\mingw\x86_64-w64-mingw32\include\stdint.h \
@@ -28,9 +49,6 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: \
  c:\progra~1\mingw\x86_64-w64-mingw32\include\sec_api\sys\timeb_s.h \
  c:\progra~1\mingw\x86_64-w64-mingw32\include\pthread_time.h \
  c:\progra~1\mingw\include\c++\11.2.0\bits\parse_numbers.h \
- c:\progra~1\mingw\include\c++\11.2.0\ext\numeric_traits.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\cpp_type_traits.h \
- c:\progra~1\mingw\include\c++\11.2.0\ext\type_traits.h \
  c:\progra~1\mingw\include\c++\11.2.0\cstdlib \
  c:\progra~1\mingw\x86_64-w64-mingw32\include\stdlib.h \
  c:\progra~1\mingw\x86_64-w64-mingw32\include\corecrt_wstdlib.h \
@@ -63,26 +81,13 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: \
  c:\progra~1\mingw\include\c++\11.2.0\exception \
  c:\progra~1\mingw\include\c++\11.2.0\bits\exception.h \
  c:\progra~1\mingw\include\c++\11.2.0\bits\exception_ptr.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\exception_defines.h \
  c:\progra~1\mingw\include\c++\11.2.0\bits\cxxabi_init_exception.h \
  c:\progra~1\mingw\include\c++\11.2.0\typeinfo \
  c:\progra~1\mingw\include\c++\11.2.0\bits\hash_bytes.h \
  c:\progra~1\mingw\include\c++\11.2.0\new \
  c:\progra~1\mingw\include\c++\11.2.0\bits\nested_exception.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\move.h \
  c:\progra~1\mingw\include\c++\11.2.0\string \
  c:\progra~1\mingw\include\c++\11.2.0\bits\char_traits.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\stl_algobase.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\functexcept.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\stl_pair.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\stl_iterator_base_types.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\stl_iterator_base_funcs.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\concept_check.h \
- c:\progra~1\mingw\include\c++\11.2.0\debug\assertions.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\stl_iterator.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\ptr_traits.h \
- c:\progra~1\mingw\include\c++\11.2.0\debug\debug.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\predefined_ops.h \
  c:\progra~1\mingw\include\c++\11.2.0\bits\allocator.h \
  c:\progra~1\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\c++allocator.h \
  c:\progra~1\mingw\include\c++\11.2.0\ext\new_allocator.h \
@@ -98,8 +103,6 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: \
  c:\progra~1\mingw\include\c++\11.2.0\bits\cxxabi_forced.h \
  c:\progra~1\mingw\include\c++\11.2.0\bits\stl_function.h \
  c:\progra~1\mingw\include\c++\11.2.0\backward\binders.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\range_access.h \
- c:\progra~1\mingw\include\c++\11.2.0\initializer_list \
  c:\progra~1\mingw\include\c++\11.2.0\bits\basic_string.h \
  c:\progra~1\mingw\include\c++\11.2.0\ext\atomicity.h \
  c:\progra~1\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\gthr.h \
@@ -124,8 +127,6 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: \
  c:\progra~1\mingw\include\c++\11.2.0\bits\charconv.h \
  c:\progra~1\mingw\include\c++\11.2.0\bits\basic_string.tcc \
  c:\progra~1\mingw\include\c++\11.2.0\bits\fs_path.h \
- c:\progra~1\mingw\include\c++\11.2.0\utility \
- c:\progra~1\mingw\include\c++\11.2.0\bits\stl_relops.h \
  c:\progra~1\mingw\include\c++\11.2.0\locale \
  c:\progra~1\mingw\include\c++\11.2.0\bits\locale_classes.h \
  c:\progra~1\mingw\include\c++\11.2.0\bits\locale_classes.tcc \
@@ -147,7 +148,6 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: \
  c:\progra~1\mingw\include\c++\11.2.0\bits\locale_conv.h \
  c:\progra~1\mingw\include\c++\11.2.0\bits\unique_ptr.h \
  c:\progra~1\mingw\include\c++\11.2.0\tuple \
- c:\progra~1\mingw\include\c++\11.2.0\array \
  c:\progra~1\mingw\include\c++\11.2.0\bits\uses_allocator.h \
  c:\progra~1\mingw\include\c++\11.2.0\bits\invoke.h \
  c:\progra~1\mingw\include\c++\11.2.0\iomanip \
