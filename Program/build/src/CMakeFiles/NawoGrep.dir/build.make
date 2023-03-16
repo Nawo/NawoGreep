@@ -68,19 +68,19 @@ include src/CMakeFiles/NawoGrep.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/NawoGrep.dir/flags.make
 
-src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj: src/CMakeFiles/NawoGrep.dir/flags.make
-src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src/FindedFiles.cpp
-src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj: src/CMakeFiles/NawoGrep.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Projekty\Work\TietoEvry\Program\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj"
-	cd /d D:\Projekty\Work\TietoEvry\Program\build\src && C:\PROGRA~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj -MF CMakeFiles\NawoGrep.dir\FindedFiles.cpp.obj.d -o CMakeFiles\NawoGrep.dir\FindedFiles.cpp.obj -c D:\Projekty\Work\TietoEvry\Program\src\FindedFiles.cpp
+src/CMakeFiles/NawoGrep.dir/main.cpp.obj: src/CMakeFiles/NawoGrep.dir/flags.make
+src/CMakeFiles/NawoGrep.dir/main.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src/main.cpp
+src/CMakeFiles/NawoGrep.dir/main.cpp.obj: src/CMakeFiles/NawoGrep.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Projekty\Work\TietoEvry\Program\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/NawoGrep.dir/main.cpp.obj"
+	cd /d D:\Projekty\Work\TietoEvry\Program\build\src && C:\PROGRA~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/NawoGrep.dir/main.cpp.obj -MF CMakeFiles\NawoGrep.dir\main.cpp.obj.d -o CMakeFiles\NawoGrep.dir\main.cpp.obj -c D:\Projekty\Work\TietoEvry\Program\src\main.cpp
 
-src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NawoGrep.dir/FindedFiles.cpp.i"
-	cd /d D:\Projekty\Work\TietoEvry\Program\build\src && C:\PROGRA~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projekty\Work\TietoEvry\Program\src\FindedFiles.cpp > CMakeFiles\NawoGrep.dir\FindedFiles.cpp.i
+src/CMakeFiles/NawoGrep.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NawoGrep.dir/main.cpp.i"
+	cd /d D:\Projekty\Work\TietoEvry\Program\build\src && C:\PROGRA~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projekty\Work\TietoEvry\Program\src\main.cpp > CMakeFiles\NawoGrep.dir\main.cpp.i
 
-src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NawoGrep.dir/FindedFiles.cpp.s"
-	cd /d D:\Projekty\Work\TietoEvry\Program\build\src && C:\PROGRA~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projekty\Work\TietoEvry\Program\src\FindedFiles.cpp -o CMakeFiles\NawoGrep.dir\FindedFiles.cpp.s
+src/CMakeFiles/NawoGrep.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NawoGrep.dir/main.cpp.s"
+	cd /d D:\Projekty\Work\TietoEvry\Program\build\src && C:\PROGRA~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projekty\Work\TietoEvry\Program\src\main.cpp -o CMakeFiles\NawoGrep.dir\main.cpp.s
 
 src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: src/CMakeFiles/NawoGrep.dir/flags.make
 src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src/Grep.cpp
@@ -96,32 +96,32 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NawoGrep.dir/Grep.cpp.s"
 	cd /d D:\Projekty\Work\TietoEvry\Program\build\src && C:\PROGRA~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projekty\Work\TietoEvry\Program\src\Grep.cpp -o CMakeFiles\NawoGrep.dir\Grep.cpp.s
 
-src/CMakeFiles/NawoGrep.dir/main.cpp.obj: src/CMakeFiles/NawoGrep.dir/flags.make
-src/CMakeFiles/NawoGrep.dir/main.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src/main.cpp
-src/CMakeFiles/NawoGrep.dir/main.cpp.obj: src/CMakeFiles/NawoGrep.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Projekty\Work\TietoEvry\Program\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/NawoGrep.dir/main.cpp.obj"
-	cd /d D:\Projekty\Work\TietoEvry\Program\build\src && C:\PROGRA~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/NawoGrep.dir/main.cpp.obj -MF CMakeFiles\NawoGrep.dir\main.cpp.obj.d -o CMakeFiles\NawoGrep.dir\main.cpp.obj -c D:\Projekty\Work\TietoEvry\Program\src\main.cpp
+src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj: src/CMakeFiles/NawoGrep.dir/flags.make
+src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src/FindedFiles.cpp
+src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj: src/CMakeFiles/NawoGrep.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Projekty\Work\TietoEvry\Program\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj"
+	cd /d D:\Projekty\Work\TietoEvry\Program\build\src && C:\PROGRA~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj -MF CMakeFiles\NawoGrep.dir\FindedFiles.cpp.obj.d -o CMakeFiles\NawoGrep.dir\FindedFiles.cpp.obj -c D:\Projekty\Work\TietoEvry\Program\src\FindedFiles.cpp
 
-src/CMakeFiles/NawoGrep.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NawoGrep.dir/main.cpp.i"
-	cd /d D:\Projekty\Work\TietoEvry\Program\build\src && C:\PROGRA~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projekty\Work\TietoEvry\Program\src\main.cpp > CMakeFiles\NawoGrep.dir\main.cpp.i
+src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NawoGrep.dir/FindedFiles.cpp.i"
+	cd /d D:\Projekty\Work\TietoEvry\Program\build\src && C:\PROGRA~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projekty\Work\TietoEvry\Program\src\FindedFiles.cpp > CMakeFiles\NawoGrep.dir\FindedFiles.cpp.i
 
-src/CMakeFiles/NawoGrep.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NawoGrep.dir/main.cpp.s"
-	cd /d D:\Projekty\Work\TietoEvry\Program\build\src && C:\PROGRA~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projekty\Work\TietoEvry\Program\src\main.cpp -o CMakeFiles\NawoGrep.dir\main.cpp.s
+src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NawoGrep.dir/FindedFiles.cpp.s"
+	cd /d D:\Projekty\Work\TietoEvry\Program\build\src && C:\PROGRA~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projekty\Work\TietoEvry\Program\src\FindedFiles.cpp -o CMakeFiles\NawoGrep.dir\FindedFiles.cpp.s
 
 # Object files for target NawoGrep
 NawoGrep_OBJECTS = \
-"CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj" \
+"CMakeFiles/NawoGrep.dir/main.cpp.obj" \
 "CMakeFiles/NawoGrep.dir/Grep.cpp.obj" \
-"CMakeFiles/NawoGrep.dir/main.cpp.obj"
+"CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj"
 
 # External object files for target NawoGrep
 NawoGrep_EXTERNAL_OBJECTS =
 
-src/NawoGrep.exe: src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj
-src/NawoGrep.exe: src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj
 src/NawoGrep.exe: src/CMakeFiles/NawoGrep.dir/main.cpp.obj
+src/NawoGrep.exe: src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj
+src/NawoGrep.exe: src/CMakeFiles/NawoGrep.dir/FindedFiles.cpp.obj
 src/NawoGrep.exe: src/CMakeFiles/NawoGrep.dir/build.make
 src/NawoGrep.exe: src/CMakeFiles/NawoGrep.dir/linkLibs.rsp
 src/NawoGrep.exe: src/CMakeFiles/NawoGrep.dir/objects1

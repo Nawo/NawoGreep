@@ -4,6 +4,9 @@ FindedFiles::FindedFiles(const std::filesystem::directory_entry& filePatch_, con
     : filePatch(filePatch_),
       threadID(threadID_){};
 
+bool FindedFiles::operator<(const FindedFiles& rhs) const {
+    return inFilePatternsNumber > rhs.inFilePatternsNumber;
+}
 std::filesystem::directory_entry FindedFiles::getFilePatch() const {
     return filePatch;
 }

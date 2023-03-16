@@ -5,6 +5,8 @@
 #include <thread>
 
 struct FindedFiles {
+    bool operator<(const FindedFiles& rhs) const;
+
     // CONTAINERS
     std::vector<std::pair<int, std::string>> lines;
 

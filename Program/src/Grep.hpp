@@ -37,23 +37,25 @@ private:
     // CONTAINERS
     std::array<char, 6> chars{',', '.', ' ', ':', '!', '?'};
 
-    std::deque<std::filesystem::directory_entry*> filesToParse;
-    std::deque<FindedFiles*> findedFiles;
+    std::deque<std::filesystem::directory_entry> filesToParse;
+    std::deque<FindedFiles*> parsedFilesWithPattern;
 
-    std::mutex queueMutex;
-    std::mutex findedFilesMutex;
     std::vector<std::thread> threads;
 
     std::multimap<std::thread::id, std::string> toLogFile;
     std::map<std::thread::id, int> threadFileCount;
     std::vector<std::pair<std::thread::id, int>> sortedThreads;
 
+    // MUTEX
+
+    std::mutex queueMutex;
+    std::mutex findedFilesMutex;
+
     // TIME VARIABLES
     std::chrono::time_point<std::chrono::system_clock> startProgramTime;
     std::chrono::time_point<std::chrono::system_clock> endProgramTime;
 
     // FUNCTIONS
-    int checkPattern(const std::string lineInFile);
     void parseArguments(const int& argc, char* argv[]);
     void getStartTime();
     void searchFiles();
@@ -65,10 +67,11 @@ private:
     void printVariables();
 
 public:
-    Grep() = delete;
+    Grep() = default;
     Grep(const int& argc, char* argv[]);
 
     ~Grep() = default;
 
     void run();
+    int countPatternInLine(const std::string lineInFile, const std::string& pattern);
 };

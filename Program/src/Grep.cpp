@@ -12,8 +12,6 @@ void Grep::parseArguments(const int& argc, char* argv[]) {
     }
 
     pattern = argv[1];
-    // pattern.insert(0, 1, ' ');
-    // pattern.push_back(' ');
 
     for (int i = 2; i < argc; i++) {
         std::string arg = argv[i];
@@ -51,7 +49,7 @@ void Grep::searchFiles() {
                         if (entry.is_regular_file()) {
                             searchedFiles++;
                             if (entry.path().extension() == ".txt") {
-                                filesToParse.emplace_back(new std::filesystem::directory_entry(entry.path().string()));
+                                filesToParse.emplace_back(entry.path().string());
                             }
                         } else if (entry.is_directory()) {
                             foldersToSearch.emplace_back(new std::filesystem::path(entry.path()));
@@ -71,7 +69,14 @@ void Grep::searchFiles() {
     }
 }
 
-int Grep::checkPattern(const std::string lineInFile) {
+bool operator==(const FindedFiles& lhs, const FindedFiles& rhs) {
+    return lhs.getThreadID() == rhs.getThreadID();
+}
+bool compareObjects(const FindedFiles* a, const FindedFiles* b) {
+    return *a < *b;
+}
+
+int Grep::countPatternInLine(const std::string lineInFile, const std::string& pattern) {
     int count = 0;
     auto it = std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end());
     while (it != lineInFile.end()) {
@@ -102,25 +107,20 @@ void Grep::parseFiles() {
         FindedFiles* findedFiles_iterator;
 
         std::thread::id thisThreadId = std::this_thread::get_id();
-        std::ifstream file(fileToParse->path());
+        std::ifstream file(fileToParse.path());
         std::string lineInFile;
 
         while (std::getline(file, lineInFile)) {
-            // if (std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end()) != lineInFile.end() ||
-            //     (std::equal(lineInFile.begin(), lineInFile.begin() + (pattern.size() - 1), pattern.begin() + 1, pattern.end())) ||
-            //     (std::equal(lineInFile.rbegin(), lineInFile.rbegin() + (pattern.size() - 1), pattern.rbegin() + 1, pattern.rend()))) {
-            auto countPatternsInLine = checkPattern(lineInFile);
+            auto countPatternsInLine = countPatternInLine(lineInFile, pattern);
             if (countPatternsInLine) {
                 if (find == false) {
                     find = true;
                     filesWithPattern++;
                     findedFilesMutex.lock();
-                    findedFiles_iterator = findedFiles.emplace_back(new FindedFiles(*fileToParse, thisThreadId));
+                    findedFiles_iterator = parsedFilesWithPattern.emplace_back(new FindedFiles(fileToParse, thisThreadId));
                     findedFilesMutex.unlock();
                 }
                 findedFiles_iterator->lines.emplace_back(lineNumber, lineInFile);
-                // patternsNumber++;
-                // inFilePatternsNumber++;
                 patternsNumber += countPatternsInLine;
                 inFilePatternsNumber += countPatternsInLine;
             }
@@ -143,11 +143,10 @@ void Grep::processFilesInQueue() {
 }
 
 void Grep::saveToResultFile() {
-    std::sort(findedFiles.begin(), findedFiles.end(),
-              [](const auto& lhs, const auto& rhs) { return lhs->getInFilePatternsNumber() > rhs->getInFilePatternsNumber(); });
+    std::sort(parsedFilesWithPattern.begin(), parsedFilesWithPattern.end(), compareObjects);
     std::ofstream fileToWriteResuult(resultFile + ".txt", std::ios::out | std::ios::trunc);
     if (fileToWriteResuult.is_open()) {
-        for (const auto& file : findedFiles) {
+        for (const auto& file : parsedFilesWithPattern) {
             for (const auto& element : file->lines)
                 fileToWriteResuult << file->getFilePatch()
                                    << ":" << element.first
@@ -159,7 +158,7 @@ void Grep::saveToResultFile() {
 }
 
 void Grep::saveToLogFile() {
-    for (const auto& file : findedFiles) {
+    for (const auto& file : parsedFilesWithPattern) {
         toLogFile.emplace(file->getThreadID(), file->getFilePatch().path().filename().string());
     }
 
