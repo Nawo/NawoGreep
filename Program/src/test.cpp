@@ -11,4 +11,6 @@ TEST(countPatternInLineTest, ShouldCountPattern) {
     ASSERT_EQ(cut.countPatternInLine("is this good option is?", "is"), 2);
     ASSERT_EQ(cut.countPatternInLine("Dupa is dupa, is, dupa is", "is"), 3);
     ASSERT_EQ(cut.countPatternInLine("dupadupa haha", "dupa"), 0);
+    ASSERT_EQ(cut.countPatternInLine("haha", "haha"), 1);
+    ASSERT_EQ(cut.countPatternInLine("hahahaha", "haha"), 0);
 }

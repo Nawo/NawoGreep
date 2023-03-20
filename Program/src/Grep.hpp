@@ -7,6 +7,7 @@
 #include <fstream>
 #include <iostream>
 #include <map>
+#include <memory>
 #include <mutex>
 #include <queue>
 #include <regex>
@@ -38,7 +39,7 @@ private:
     std::array<char, 6> chars{',', '.', ' ', ':', '!', '?'};
 
     std::deque<std::filesystem::directory_entry> filesToParse;
-    std::deque<FindedFiles*> parsedFilesWithPattern;
+    std::deque<std::shared_ptr<FindedFiles>> parsedFilesWithPattern;
 
     std::vector<std::thread> threads;
 

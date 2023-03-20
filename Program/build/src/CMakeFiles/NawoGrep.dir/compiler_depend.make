@@ -398,6 +398,15 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_tree.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_map.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_multimap.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/memory \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/align.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bit \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/shared_ptr_atomic.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_base.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/backward/auto_ptr.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/pstl/glue_memory_defs.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/mutex \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/std_mutex.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/unique_lock.h \
@@ -410,15 +419,6 @@ src/CMakeFiles/NawoGrep.dir/Grep.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src
   C:/Program\ Files/MinGW/include/c++/11.2.0/bitset \
   C:/Program\ Files/MinGW/include/c++/11.2.0/iterator \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stream_iterator.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/memory \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/align.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bit \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/shared_ptr_atomic.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_base.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/backward/auto_ptr.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/pstl/glue_memory_defs.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/stack \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_stack.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/cstring \
@@ -642,6 +642,15 @@ src/CMakeFiles/NawoGrep.dir/main.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_tree.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_map.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_multimap.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/memory \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/align.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bit \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/shared_ptr_atomic.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_base.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/backward/auto_ptr.h \
+  C:/Program\ Files/MinGW/include/c++/11.2.0/pstl/glue_memory_defs.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/mutex \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/std_mutex.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/unique_lock.h \
@@ -654,15 +663,6 @@ src/CMakeFiles/NawoGrep.dir/main.cpp.obj: D:/Projekty/Work/TietoEvry/Program/src
   C:/Program\ Files/MinGW/include/c++/11.2.0/bitset \
   C:/Program\ Files/MinGW/include/c++/11.2.0/iterator \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stream_iterator.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/memory \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/align.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bit \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/shared_ptr_atomic.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_base.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/backward/auto_ptr.h \
-  C:/Program\ Files/MinGW/include/c++/11.2.0/pstl/glue_memory_defs.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/stack \
   C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_stack.h \
   C:/Program\ Files/MinGW/include/c++/11.2.0/cstring \
@@ -1128,18 +1128,6 @@ C:/Program\ Files/MinGW/include/c++/11.2.0/bits/std_mutex.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_multimap.h:
 
-C:/Program\ Files/MinGW/include/c++/11.2.0/mutex:
-
-C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_queue.h:
-
-C:/Program\ Files/MinGW/include/c++/11.2.0/regex:
-
-C:/Program\ Files/MinGW/include/c++/11.2.0/bitset:
-
-C:/Program\ Files/MinGW/include/c++/11.2.0/iterator:
-
-C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stream_iterator.h:
-
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/regex_scanner.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/memory:
@@ -1157,6 +1145,18 @@ C:/Program\ Files/MinGW/include/c++/11.2.0/bits/atomic_base.h:
 C:/Program\ Files/MinGW/include/c++/11.2.0/backward/auto_ptr.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/pstl/glue_memory_defs.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/mutex:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_queue.h:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/regex:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bitset:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/iterator:
+
+C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stream_iterator.h:
 
 C:/Program\ Files/MinGW/include/c++/11.2.0/bits/stl_stack.h:
 

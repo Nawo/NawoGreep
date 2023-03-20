@@ -72,7 +72,7 @@ void Grep::searchFiles() {
 bool operator==(const FindedFiles& lhs, const FindedFiles& rhs) {
     return lhs.getThreadID() == rhs.getThreadID();
 }
-bool compareObjects(const FindedFiles* a, const FindedFiles* b) {
+bool compareObjects(const std::shared_ptr<FindedFiles> a, const std::shared_ptr<FindedFiles> b) {
     return *a < *b;
 }
 
@@ -104,7 +104,7 @@ void Grep::parseFiles() {
         int inFilePatternsNumber = 0;
         int lineNumber = 1;
 
-        FindedFiles* findedFiles_iterator;
+        std::shared_ptr<FindedFiles> findedFiles_iterator = nullptr;
 
         std::thread::id thisThreadId = std::this_thread::get_id();
         std::ifstream file(fileToParse.path());
@@ -117,7 +117,7 @@ void Grep::parseFiles() {
                     find = true;
                     filesWithPattern++;
                     findedFilesMutex.lock();
-                    findedFiles_iterator = parsedFilesWithPattern.emplace_back(new FindedFiles(fileToParse, thisThreadId));
+                    findedFiles_iterator = parsedFilesWithPattern.emplace_back(std::make_shared<FindedFiles>(fileToParse, thisThreadId));
                     findedFilesMutex.unlock();
                 }
                 findedFiles_iterator->lines.emplace_back(lineNumber, lineInFile);

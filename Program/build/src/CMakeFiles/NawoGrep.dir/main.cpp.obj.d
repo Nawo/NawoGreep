@@ -200,6 +200,15 @@ src/CMakeFiles/NawoGrep.dir/main.cpp.obj: \
  c:\progra~1\mingw\include\c++\11.2.0\bits\stl_tree.h \
  c:\progra~1\mingw\include\c++\11.2.0\bits\stl_map.h \
  c:\progra~1\mingw\include\c++\11.2.0\bits\stl_multimap.h \
+ c:\progra~1\mingw\include\c++\11.2.0\memory \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\stl_raw_storage_iter.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\align.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bit \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\shared_ptr_atomic.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\atomic_base.h \
+ c:\progra~1\mingw\include\c++\11.2.0\bits\atomic_lockfree_defines.h \
+ c:\progra~1\mingw\include\c++\11.2.0\backward\auto_ptr.h \
+ c:\progra~1\mingw\include\c++\11.2.0\pstl\glue_memory_defs.h \
  c:\progra~1\mingw\include\c++\11.2.0\mutex \
  c:\progra~1\mingw\include\c++\11.2.0\bits\std_mutex.h \
  c:\progra~1\mingw\include\c++\11.2.0\bits\unique_lock.h \
@@ -212,15 +221,6 @@ src/CMakeFiles/NawoGrep.dir/main.cpp.obj: \
  c:\progra~1\mingw\include\c++\11.2.0\bitset \
  c:\progra~1\mingw\include\c++\11.2.0\iterator \
  c:\progra~1\mingw\include\c++\11.2.0\bits\stream_iterator.h \
- c:\progra~1\mingw\include\c++\11.2.0\memory \
- c:\progra~1\mingw\include\c++\11.2.0\bits\stl_raw_storage_iter.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\align.h \
- c:\progra~1\mingw\include\c++\11.2.0\bit \
- c:\progra~1\mingw\include\c++\11.2.0\bits\shared_ptr_atomic.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\atomic_base.h \
- c:\progra~1\mingw\include\c++\11.2.0\bits\atomic_lockfree_defines.h \
- c:\progra~1\mingw\include\c++\11.2.0\backward\auto_ptr.h \
- c:\progra~1\mingw\include\c++\11.2.0\pstl\glue_memory_defs.h \
  c:\progra~1\mingw\include\c++\11.2.0\stack \
  c:\progra~1\mingw\include\c++\11.2.0\bits\stl_stack.h \
  c:\progra~1\mingw\include\c++\11.2.0\cstring \
