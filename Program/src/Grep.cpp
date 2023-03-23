@@ -80,8 +80,8 @@ int Grep::countPatternInLine(const std::string lineInFile, const std::string& pa
     int count = 0;
     auto it = std::search(lineInFile.begin(), lineInFile.end(), pattern.begin(), pattern.end());
     while (it != lineInFile.end()) {
-        if ((std::find(chars.begin(), chars.end(), *(it - 1)) != chars.end() || it == lineInFile.begin()) &&
-            (std::find(chars.begin(), chars.end(), *(it + pattern.size())) != chars.end() || (it + pattern.size()) == (lineInFile.end()))) {
+        if ((std::find(chars.begin(), chars.end(), *(it - 1)) != chars.end() || it == lineInFile.begin()) && // jezeli znak przed znalezionym patternem w lineInFile jest znakiem rozdzielajacym
+            (std::find(chars.begin(), chars.end(), *(it + pattern.size())) != chars.end() || (it + pattern.size()) == (lineInFile.end()))) { // jezeli znak po znalezionym patternie w lineInFile jest znakiem rozdzielajacym 
             count++;
         }
         it = std::search(it + pattern.size(), lineInFile.end(), pattern.begin(), pattern.end());
